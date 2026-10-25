@@ -353,6 +353,9 @@
 % Title Page Variables
 % ------------------------------------------------
 \makeatletter
+\newcommand{\projectCode}[1]{\def\@projectCode{#1}}
+\newcommand{\documentTitle}[1]{\def\@documentTitle{#1}}
+\newcommand{\advisorPositionTH}[1]{\def\@advisorPositionTH{#1}}
 \newcommand{\titleTH}[1]{\def\@titleTH{#1}}
 \newcommand{\titleEN}[1]{\def\@titleEN{#1}}
 \newcommand{\advisorTH}[1]{\def\@advisorTH{#1}}
@@ -385,6 +388,9 @@
 \newcommand{\secondStudentNameEN}[1]{\def\@secondStudentNameEN{#1}}
 
 % ค่าเริ่มต้น
+\def\@projectCode{}
+\def\@documentTitle{เอกสารโครงงานฉบับสมบูรณ์}
+\def\@advisorPositionTH{}
 \def\@courseCode{CP354 771}
 \def\@courseName{โครงงานคอมพิวเตอร์ 1}
 \def\@semester{1}
@@ -405,7 +411,9 @@
 
 \includegraphics[scale=0.5]{./theme/kku-logo.png}
 
-{\Large\bfseries เอกสารโครงงานฉบับสมบูรณ์}
+{\large\bfseries CS \@academicYearTH{} / \@projectCode\par}
+\vspace{0.3cm}
+{\Large\bfseries \@documentTitle}
 
 \vfill
 
@@ -420,7 +428,12 @@
 }
 \vspace{1cm}
 
-{\large อาจารย์ที่ปรึกษา \\ \@advisorTH \\}
+\begin{flushleft}
+{\large อาจารย์ที่ปรึกษา: \@advisorTH\par}
+\IfEmptyTF{\@advisorPositionTH}{}{%
+  {\large ตำแหน่ง: \@advisorPositionTH\par}%
+}
+\end{flushleft}
 
 \vfill
 
@@ -480,8 +493,8 @@
 
 \makeatletter
 \newenvironment{acknowledgement}{
-  \chapter*{กิตติกรรมประกาศ}
-  \addcontentsline{toc}{chapter}{กิตติกรรมประกาศ}
+  \chapter*{คำนำ}
+  \addcontentsline{toc}{chapter}{คำนำ}
 }{
 \begin{flushright}
 ผู้จัดทำ
@@ -510,8 +523,8 @@
 % Five-Chapter Structure — ตามหลักสูตร CS
 % ------------------------------------------------
 \newcommand{\chapterone}{\chapter{บทนำ}\input{chapter1}}
-\newcommand{\chaptertwo}{\chapter{ทฤษฎีและงานวิจัยที่เกี่ยวข้อง}\input{chapter2}}
-\newcommand{\chapterthree}{\chapter{วิธีการดำเนินโครงงาน}\input{chapter3}}
+\newcommand{\chaptertwo}{\chapter{คู่มือการใช้งานระบบ}\input{chapter2}}
+\newcommand{\chapterthree}{\chapter{คู่มือการติดตั้งระบบ}\input{chapter3}}
 \newcommand{\chapterfour}{\chapter{การวิเคราะห์ ออกแบบและพัฒนาระบบ}\input{chapter4}}
 \newcommand{\chapterfive}{\chapter{สรุปผลการดำเนินงาน}\input{chapter5}}
 
