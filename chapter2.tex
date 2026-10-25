@@ -4,17 +4,123 @@
 % เพิ่มขั้นตอนและภาพหน้าจอจริงในแต่ละหัวข้อ พร้อมหมายเลขกำกับตามลำดับการกด
 
 \section{การเริ่มต้นใช้งานระบบ}
-\subsection{การเปิดแอปพลิเคชัน}
-% TODO: เพิ่มภาพและคำอธิบายหน้าจอเริ่มต้น
-
 \subsection{การสมัครสมาชิก}
-% TODO: เพิ่มขั้นตอนและข้อมูลที่ต้องกรอกตามหน้าจอจริง
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าเข้าสู่ระบบ เลือกลิงก์ สมัครสมาชิก
+    \item กรอก ชื่อที่แสดง และ EMAIL ที่ต้องการใช้กับบัญชี
+    \item กดปุ่ม สมัครสมาชิก แล้วตรวจสอบอีเมลเพื่อรับรหัส OTP
+    \item กรอกรหัส OTP จำนวน 6 หลักให้ตรงกับอีเมลที่ได้รับ
+    และกด ยืนยันรหัส OTP ภายในเวลาที่แสดงบนหน้าจอ
+    หากยังไม่ได้รับรหัส ให้รอจนสามารถขอส่งรหัสใหม่ได้
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/register.jpg}
+        \caption{กรอกข้อมูลสมัครสมาชิก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/otp.jpg}
+        \caption{ยืนยันรหัส OTP}
+    \end{subfigure}
+    \caption{การสมัครสมาชิกและยืนยันอีเมลด้วย OTP}
+    \label{fig:account-register-otp}
+\end{figure}
+
+\subsubsection{การอ่านข้อกำหนดและให้ความยินยอม}
+หลังยืนยันอีเมล ระบบแสดงหน้า ข้อกำหนดและการยินยอม
+กดรายการ ข้อกำหนดและเงื่อนไขการใช้งาน เพื่อเปิดอ่านรายละเอียด
+จากนั้นกด ปิด เพื่อกลับหน้าก่อนหน้า
+หากยอมรับเงื่อนไข ให้ทำเครื่องหมายในช่องยอมรับแล้วกด ยินยอมและดำเนินการต่อ
+หากไม่ยอมรับ ให้เลือก ไม่ยินยอม
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/consent.jpg}
+        \caption{หน้าข้อกำหนดและการยินยอม}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/terms.jpg}
+        \caption{รายละเอียดข้อกำหนดและเงื่อนไข}
+    \end{subfigure}
+    \caption{การอ่านเงื่อนไขและยืนยันความยินยอม}
+    \label{fig:account-consent}
+\end{figure}
+
+\subsubsection{การกรอกข้อมูลเริ่มต้น}
+\begin{enumerate}[label=\arabic*)]
+    \item หน้า ข้อมูลพื้นฐาน กรอกวันเกิด โดยระบุปีเป็น ค.ศ.
+    เลือกเพศกำเนิด กรอกน้ำหนัก ส่วนสูง และจำนวนวันที่วิ่งต่อสัปดาห์ จากนั้นกด ต่อไป
+    \item หน้า สุขภาพและอาการบาดเจ็บ เลือกโรคประจำตัว
+    อาการบาดเจ็บที่เคยเป็น และอาการบาดเจ็บในปัจจุบันตามข้อมูลจริง
+    หากไม่มี ให้เลือก ไม่มี ในหมวดนั้น แล้วกด ถัดไป
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/basic-info.jpg}
+        \caption{กรอกข้อมูลพื้นฐาน}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/health-info.jpg}
+        \caption{ระบุสุขภาพและอาการบาดเจ็บ}
+    \end{subfigure}
+    \caption{การกรอกข้อมูลพื้นฐานและข้อมูลสุขภาพ}
+    \label{fig:account-onboarding-info}
+\end{figure}
+
+\begin{enumerate}[label=\arabic*),start=3]
+    \item หน้า เป้าหมายการวิ่ง เลือกเป้าหมายด้านระยะทางและด้านสุขภาพอย่างละ 1 ข้อ
+    \item หน้า ประวัติการวิ่ง ระบุว่าเคยซ้อมหรือแข่งขันวิ่งมาก่อนหรือไม่
+    และเลือกระยะทางไกลที่สุดที่เคยวิ่งตามข้อมูลจริง
+    \item ตรวจสอบข้อมูลในส่วน สรุปประวัติการวิ่ง
+    หากต้องการแก้ไข ให้ย้อนกลับไปปรับข้อมูลก่อนกด เริ่มใช้งาน
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/running-goals.jpg}
+        \caption{เลือกเป้าหมายการวิ่ง}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/account/running-history.jpg}
+        \caption{ตรวจสอบประวัติและสรุปข้อมูล}
+    \end{subfigure}
+    \caption{การกำหนดเป้าหมายและตรวจสอบข้อมูลก่อนเริ่มใช้งาน}
+    \label{fig:account-onboarding-goals}
+\end{figure}
 
 \subsection{การเข้าสู่ระบบ}
-% TODO: เพิ่มขั้นตอนเข้าสู่ระบบตามวิธีที่รองรับจริง
-
-\subsection{การเข้าสู่ระบบด้วยบัญชี Google}
-% TODO: เพิ่มขั้นตอนเลือกบัญชีและเข้าสู่หน้าหลัก พร้อมภาพประกอบ
+ผู้ใช้งานสามารถเลือกเข้าสู่ระบบได้ 2 วิธี ดังภาพที่ \ref{fig:account-login}
+หมายเลข 1 และ 2 ในภาพแสดงปุ่มสำหรับเข้าสู่ระบบแต่ละวิธี ดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item \textbf{เข้าสู่ระบบด้วยอีเมล (หมายเลข 1)}
+    กรอกอีเมลของบัญชีที่สมัครไว้ในช่อง EMAIL
+     แล้วกดปุ่มเข้าสู่ระบบจากนั้นดำเนินการยืนยันตัวตนตามที่แอปพลิเคชันแสดง
+    \item \textbf{เข้าสู่ระบบด้วย Google (หมายเลข 2)}
+    กดปุ่มเข้าสู่ระบบด้วย Google
+    จากนั้นเลือกบัญชี Google ที่ต้องการใช้และดำเนินการยืนยันตัวตนตามหน้าจอที่ปรากฏ
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/account/login-numbered.png}
+    \caption{การเข้าสู่ระบบด้วยอีเมล (หมายเลข 1) และบัญชี Google (หมายเลข 2)}
+    \label{fig:account-login}
+    \label{fig:account-google-login}
+\end{figure}
+% TODO: เพิ่มภาพการยืนยันตัวตนด้วยอีเมล การเลือกบัญชี Google และผลหลังเข้าสู่ระบบสำเร็จ
 
 \section{คู่มือการใช้งานสำหรับผู้ใช้ทั่วไป}
 \subsection{การใช้งานหน้าหลัก}
@@ -26,8 +132,48 @@
 \subsection{การออกแบบแผนการวิ่งเฉพาะบุคคล}
 % TODO: เพิ่มขั้นตอนกำหนดข้อมูล สร้างแผน และตรวจสอบผลลัพธ์
 
-\subsection{การจัดตารางการวิ่ง}
-% TODO: เพิ่มขั้นตอนดูและจัดตารางการฝึกซ้อม
+\subsection{การลงตารางซ้อม}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าเลือกตารางซ้อม เลือกประเภทหรือระยะทางการวิ่งที่ต้องการ
+    \item ตรวจสอบชื่อแผน ระดับ และระยะเวลาของตารางซ้อมที่แสดง
+    \item อ่านรายละเอียดประเภทการฝึกซ้อมและจำนวนวันซ้อมต่อสัปดาห์
+    แล้วเลือกตารางที่ต้องการเพื่อตรวจสอบรายละเอียดก่อนลงทะเบียน
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/schedule/schedule-01.jpg}{%
+        \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-01.jpg}%
+    }{%
+        \fbox{\parbox[c][5cm][c]{0.65\textwidth}{\centering
+        รอภาพหน้าเลือกตารางซ้อม\\
+        \texttt{schedule-01.jpg}}}%
+    }
+    \caption{หน้าเลือกตารางซ้อม}
+    \label{fig:schedule-selection}
+\end{figure}
+
+\subsection{การลงทะเบียนตารางซ้อม}
+\begin{enumerate}[label=\arabic*)]
+    \item ตรวจสอบชื่อแผนและระดับของตารางซ้อมที่เลือก
+    \item เลือกระยะเวลาฝึกซ้อมและสัปดาห์ที่ต้องการเริ่มซ้อมตามตัวเลือกที่แสดง
+    \item ตรวจสอบจำนวนวันซ้อมแต่ละประเภท และกำหนดประเภทการซ้อมในแต่ละวันของสัปดาห์
+    \item ตรวจสอบข้อมูลก่อนดำเนินการลงทะเบียนตารางซ้อม
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/schedule/schedule-02.jpg}{%
+        \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-02.jpg}%
+    }{%
+        \fbox{\parbox[c][5cm][c]{0.65\textwidth}{\centering
+        รอภาพหน้าลงทะเบียนตารางซ้อม\\
+        \texttt{schedule-02.jpg}}}%
+    }
+    \caption{หน้าลงทะเบียนตารางซ้อมและกำหนดวันฝึกซ้อม}
+    \label{fig:schedule-registration}
+\end{figure}
+% TODO: ใส่ภาพ schedule-01.jpg และ schedule-02.jpg ใน images/schedule เมื่อได้รับไฟล์ในเครื่อง
+% TODO: ตรวจสอบชื่อปุ่มยืนยันและเพิ่มภาพผลหลังลงทะเบียนตารางซ้อมสำเร็จ
+
 
 \subsection{การปรับแผนการวิ่ง}
 % TODO: เพิ่มขั้นตอนปรับแผนและตรวจสอบแผนหลังปรับ
