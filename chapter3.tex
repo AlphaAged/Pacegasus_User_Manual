@@ -8,7 +8,80 @@
 
 \section{การติดตั้งเครื่องมือที่จำเป็น}
 \subsection{การติดตั้ง Flutter SDK}
-% TODO: เพิ่มขั้นตอนติดตั้ง การตั้งค่า PATH และภาพตรวจสอบความพร้อม
+ขั้นตอนต่อไปนี้เป็นการติดตั้ง Flutter SDK บนระบบปฏิบัติการ Windows
+โดยดาวน์โหลดไฟล์ SDK และเพิ่มตำแหน่งโฟลเดอร์ bin ลงใน Path
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดเว็บไซต์ \url{https://docs.flutter.dev/install/manual}
+    เลือกแพลตฟอร์ม Windows แล้วดาวน์โหลด Flutter SDK ในรูปแบบไฟล์ .zip
+    จากส่วน Download the Flutter SDK bundle
+    \item แตกไฟล์ .zip ไปยังโฟลเดอร์ที่ต้องการเก็บ SDK
+    เช่น \verb|C:\flutter| แล้วตรวจสอบว่ามีโฟลเดอร์ bin อยู่ภายใน
+    เลือกตำแหน่งที่ไม่มีช่องว่างและไม่ต้องใช้สิทธิ์ผู้ดูแลระบบในการเขียนไฟล์
+\end{enumerate}
+% ภาพต้นฉบับ: image(20261026-055141).png
+\IfFileExists{images/installation/flutter-download.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/flutter-download.png}
+    \caption{ตำแหน่งดาวน์โหลด Flutter SDK สำหรับ Windows}
+    \label{fig:flutter-download}
+\end{figure}
+}{}
+
+\subsubsection{การตั้งค่า Path ของ Flutter SDK}
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดหน้าต่าง System Properties เลือกแท็บ Advanced
+    แล้วกด Environment Variables
+    \item ในส่วน System variables เลือก Path แล้วกด Edit
+    เพื่อกำหนดตำแหน่งสำหรับผู้ใช้ทุกคนในเครื่อง
+    ทั้งนี้ ภาพตัวอย่างแสดงการแก้ไข Path ในส่วน User variables
+    ซึ่งใช้สำหรับบัญชีผู้ใช้ปัจจุบัน และสามารถเพิ่มตำแหน่ง Flutter ได้เช่นกัน
+    ให้เลือกตั้งค่าในส่วนที่ต้องการใช้งานเพียงส่วนเดียว
+    \item ตรวจสอบรายการเดิม หากยังไม่มีตำแหน่ง Flutter ให้กด New
+    แล้วกรอกตำแหน่งโฟลเดอร์ bin ของ Flutter SDK เช่น \verb|C:\flutter\bin|
+    โดยเปลี่ยนให้ตรงกับตำแหน่งที่แตกไฟล์ไว้จริง
+    \item กด OK เพื่อบันทึก จากนั้นกด OK ในหน้าต่างที่เหลือเพื่อปิดการตั้งค่า
+\end{enumerate}
+% ภาพต้นฉบับ: image(20261026-055155).png
+\IfFileExists{images/installation/flutter-system-properties.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/flutter-system-properties.png}
+    \caption{หน้าต่าง System Properties สำหรับเข้าสู่ Environment Variables}
+    \label{fig:flutter-system-properties}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-055210).png
+\IfFileExists{images/installation/flutter-environment.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/flutter-environment.png}
+    \caption{ส่วน User variables ในหน้าต่าง Environment Variables ตามภาพตัวอย่าง}
+    \label{fig:flutter-environment}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-055220).png
+\IfFileExists{images/installation/flutter-path.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/flutter-path.png}
+    \caption{การเพิ่มตำแหน่งโฟลเดอร์ bin ของ Flutter ใน Path}
+    \label{fig:flutter-path}
+\end{figure}
+}{}
+
+\subsubsection{การตรวจสอบหลังติดตั้ง}
+ปิดและเปิด Terminal รวมถึงโปรแกรมแก้ไขโค้ดใหม่เพื่อให้ใช้ค่า Path ที่บันทึกไว้
+จากนั้นตรวจสอบด้วยคำสั่งต่อไปนี้
+\begin{verbatim}
+flutter --version
+dart --version
+flutter doctor
+\end{verbatim}
+ตรวจสอบหมายเลขรุ่นและผลจาก flutter doctor
+แล้วติดตั้งเครื่องมือที่ยังขาดตามแพลตฟอร์มที่ต้องการพัฒนา
 
 \subsection{การติดตั้ง Visual Studio Code}
 Visual Studio Code เป็นโปรแกรมสำหรับเปิดและแก้ไขไฟล์โค้ดของโครงการ
@@ -200,10 +273,26 @@ npm --version
 \end{figure}
 \end{samepage}
 
-\subsection{การนำค่าเชื่อมต่อไปกำหนดในระบบ}
-นำ Project URL และ Publishable Key ที่คัดลอกได้ไปกำหนดในส่วนตั้งค่าการเชื่อมต่อ Supabase ของโครงการ
-โดยใช้ค่าของโครงการที่ผู้ติดตั้งเลือกไว้
-% TODO: เพิ่มภาพไฟล์ตั้งค่าและชื่อตัวแปรจริงสำหรับ Project URL และ Publishable Key
+\subsection{การกำหนดค่า Supabase ในไฟล์ .env}
+หลังจากคัดลอก Project URL และ anon key ของโครงการ Supabase แล้ว
+ให้นำค่าทั้งสองไปกำหนดในไฟล์ .env ของโครงการ Pacegasus ดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดโฟลเดอร์โครงการใน Visual Studio Code แล้วเปิดไฟล์ .env
+    ที่ใช้กำหนดค่าการเชื่อมต่อของระบบ
+    \item นำ Project URL ที่คัดลอกไว้ใส่หลังเครื่องหมายเท่ากับของตัวแปร
+    \texttt{SUPABASE\_URL}
+    \item นำ anon key จากโครงการ Supabase เดียวกันใส่หลังเครื่องหมายเท่ากับของตัวแปร
+    \texttt{SUPABASE\_ANON\_KEY}
+    \item ตรวจสอบว่าค่าทั้งสองครบถ้วน แล้วบันทึกไฟล์ .env
+    ก่อนเริ่มหรือเริ่มระบบใหม่เพื่อโหลดค่าการเชื่อมต่อ
+\end{enumerate}
+ตัวอย่างการกำหนดค่าในไฟล์ .env แสดงดังภาพที่ \ref{fig:supabase-env}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\textwidth,height=0.30\textheight,keepaspectratio]{images/installation/supabase-env.png}
+    \caption{การกำหนด Project URL และ anon key ของ Supabase ในไฟล์ .env}
+    \label{fig:supabase-env}
+\end{figure}
 % TODO: เพิ่มขั้นตอนเตรียมโครงสร้างฐานข้อมูลของระบบเมื่อมีไฟล์และภาพประกอบ
 
 \section{การตั้งค่า Google Authentication}
@@ -323,12 +412,27 @@ npm --version
 \end{figure}
 \end{samepage}
 
-\subsection{การนำค่าการยืนยันตัวตนไปกำหนดในระบบ}
-นำค่า Client ID ไปกำหนดในส่วนตั้งค่าการเข้าสู่ระบบของ Pacegasus ตามประเภท Client ที่ระบบใช้
-ภาพชุดนี้แสดงตำแหน่งรับค่าจาก Google Cloud Console
-ส่วนตำแหน่งไฟล์และตัวแปรสำหรับใส่ค่าในระบบจะเพิ่มจากโค้ดและภาพประกอบจริง
+\subsection{การกำหนด Google Client ID ในไฟล์ .env}
+หลังจากคัดลอก Client ID จาก Google Cloud Console แล้ว
+ให้นำค่ามากำหนดในไฟล์ .env ของโครงการตามชื่อตัวแปรดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดไฟล์ .env ของโครงการใน Visual Studio Code
+    \item นำ Client ID ที่คัดลอกไว้ใส่หลังเครื่องหมายเท่ากับของตัวแปร
+    \texttt{GOOGLE\_CLIENT\_ID}
+    \item กำหนดค่า \texttt{GOOGLE\_CLIENT\_IDS}
+    ด้วย Client ID ที่ใช้กับระบบตามรูปแบบในภาพตัวอย่าง
+    โดยตรวจสอบว่าค่าที่กรอกเป็นของโครงการ Google Cloud ที่ตั้งค่าไว้
+    \item ตรวจสอบการสะกดชื่อตัวแปรและค่าที่คัดลอกให้ครบถ้วน
+    จากนั้นบันทึกไฟล์ .env และเริ่มระบบใหม่เพื่อโหลดค่าที่เปลี่ยนแปลง
+\end{enumerate}
+ตัวอย่างการกำหนดค่าในไฟล์ .env แสดงดังภาพที่ \ref{fig:google-auth-env}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\textwidth,height=0.30\textheight,keepaspectratio]{images/installation/google-auth-env.png}
+    \caption{การกำหนด Google Client ID ในไฟล์ .env}
+    \label{fig:google-auth-env}
+\end{figure}
 % TODO: เพิ่มภาพตั้งค่าหน้าความยินยอมและที่อยู่ redirect ของระบบจริง
-% TODO: เพิ่มภาพการกำหนด Client ID และค่าที่เกี่ยวข้องในโครงการจริง
 % TODO: เพิ่มภาพการเชื่อมต่อผู้ให้บริการ Google กับระบบยืนยันตัวตน หากระบบใช้ขั้นตอนดังกล่าว
 % TODO: เพิ่มภาพทดสอบเข้าสู่ระบบสำเร็จหลังตั้งค่าครบ
 
@@ -380,10 +484,26 @@ npm --version
 \end{figure}
 \end{samepage}
 
-\subsection{การนำ Project name และ API Key ไปกำหนดในแอปพลิเคชัน}
-บันทึก Project name และ API Key จากรายการเดียวกันไว้สำหรับตั้งค่าการเชื่อมต่อแผนที่ของ Pacegasus
-โดยใช้ค่าของโครงการที่ผู้ติดตั้งสร้างขึ้นจริง
-% TODO: เพิ่มภาพตำแหน่งไฟล์และชื่อตัวแปรที่ใช้กำหนด Project name และ API Key ในโค้ดจริง
+\subsection{การกำหนดค่า Sphere GISTDA ในไฟล์ .env}
+หลังจากคัดลอก API Key และตรวจสอบ Project name ของรายการที่สร้างไว้ใน Sphere GISTDA
+ให้นำค่ามากำหนดในไฟล์ .env ของโครงการดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดไฟล์ .env ของโครงการใน Visual Studio Code
+    \item นำ API Key ที่คัดลอกไว้ใส่หลังเครื่องหมายเท่ากับของตัวแปร
+    \texttt{GISTDA\_MAP\_API\_KEY}
+    \item กำหนดตัวแปร \texttt{GISTDA\_BUNDLE\_ID}
+    ให้ตรงกับ Bundle ID หรือชื่อแพ็กเกจของแอปที่ลงทะเบียนไว้กับ Sphere GISTDA
+    โดยตรวจสอบให้เป็นข้อมูลของรายการ API Key เดียวกัน
+    \item ตรวจสอบค่าทั้งสองแล้วบันทึกไฟล์ .env
+    จากนั้นเริ่มแอปใหม่เพื่อโหลดค่าการเชื่อมต่อแผนที่
+\end{enumerate}
+ตัวอย่างการกำหนดค่าในไฟล์ .env แสดงดังภาพที่ \ref{fig:sphere-env}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\textwidth,height=0.30\textheight,keepaspectratio]{images/installation/sphere-env.png}
+    \caption{การกำหนด API Key และ Bundle ID ของ Sphere GISTDA ในไฟล์ .env}
+    \label{fig:sphere-env}
+\end{figure}
 
 \subsection{การทดสอบการแสดงผลแผนที่}
 % TODO: เพิ่มขั้นตอนเปิดหน้าแผนที่และภาพผลหลังตั้งค่าในแอปพลิเคชันจริง
@@ -391,5 +511,51 @@ npm --version
 \section{การตั้งค่าการเชื่อมต่อบริการของระบบ}
 % TODO: ระบุตำแหน่งกำหนด API URL และค่าที่เกี่ยวข้องตามไฟล์โครงการจริง
 
-\section{การเรียกใช้งานและตรวจสอบหลังติดตั้ง}
-% TODO: เพิ่มคำสั่งเรียกใช้งาน ภาพหน้าจอเริ่มต้น และผลที่แสดงว่าติดตั้งสำเร็จ
+\section{การใช้งานและพัฒนาระบบ}
+\subsection{การดาวน์โหลดโครงการจาก GitHub}
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดเว็บไซต์คลังโครงการ Pacegasus ที่
+    https://github.com/MasTerKey1121/Pacegasus_application
+    \item กดปุ่ม Code แล้วคัดลอก URL Repository แบบ HTTPS
+    \item สำหรับระบบปฏิบัติการ Windows ให้เปิด Command Prompt
+    ในตำแหน่งที่ต้องการเก็บโครงการ แล้วใช้คำสั่งต่อไปนี้
+\end{enumerate}
+\begin{verbatim}
+git clone https://github.com/MasTerKey1121/Pacegasus_application
+\end{verbatim}
+เมื่อโคลนสำเร็จ ให้เปิด Visual Studio Code เลือก File แล้วเลือก Open Folder
+จากนั้นเปิดโฟลเดอร์ Pacegasus\_application ที่ได้จากการโคลน
+โปรแกรมจะแสดงโฟลเดอร์และไฟล์ต่าง ๆ ของระบบ Pacegasus ดังภาพที่
+\ref{fig:project-vscode}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth,height=0.40\textheight,keepaspectratio]{images/installation/project-vscode.png}
+    \caption{โฟลเดอร์และไฟล์ของโครงการ Pacegasus ใน Visual Studio Code}
+    \label{fig:project-vscode}
+\end{figure}
+
+\subsection{การติดตั้งแพ็กเกจและเรียกใช้เซิร์ฟเวอร์}
+ใน Visual Studio Code เลือก Terminal แล้วเลือก New Terminal
+โดยเริ่มจากโฟลเดอร์หลักของโครงการ และใช้คำสั่งดังนี้
+\begin{verbatim}
+cd backend
+npm install
+npm run dev
+\end{verbatim}
+คำสั่ง npm install ใช้ติดตั้งแพ็กเกจของฝั่งเซิร์ฟเวอร์ตามไฟล์ package.json
+และ npm run dev ใช้เรียกเซิร์ฟเวอร์สำหรับพัฒนา
+ให้ตั้งค่าไฟล์ .env ตามหัวข้อก่อนหน้าให้ครบก่อนเรียกใช้งาน
+และเปิด Terminal นี้ค้างไว้ระหว่างใช้งานระบบ
+
+\subsection{การติดตั้งแพ็กเกจและเปิดแอปพลิเคชัน}
+เปิด Terminal ใหม่อีกหน้าต่างใน Visual Studio Code
+โดยเริ่มจากโฟลเดอร์หลักของโครงการ แล้วใช้คำสั่งดังนี้
+\begin{verbatim}
+cd frontend
+flutter pub get
+flutter run
+\end{verbatim}
+คำสั่ง flutter pub get ใช้ติดตั้งแพ็กเกจของแอปพลิเคชันตามไฟล์ pubspec.yaml
+ส่วน flutter run ใช้เปิดแอปพลิเคชันบนอุปกรณ์ทดสอบหรือโปรแกรมจำลองที่เตรียมไว้
+หากระบบแสดงรายการอุปกรณ์ ให้เลือกอุปกรณ์ที่ต้องการใช้งาน
+โดยเปิดเซิร์ฟเวอร์ใน Terminal แรกไว้พร้อมกัน
