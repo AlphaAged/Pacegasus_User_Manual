@@ -123,79 +123,772 @@
 % TODO: เพิ่มภาพการยืนยันตัวตนด้วยอีเมล การเลือกบัญชี Google และผลหลังเข้าสู่ระบบสำเร็จ
 
 \section{คู่มือการใช้งานสำหรับผู้ใช้ทั่วไป}
-\subsection{การใช้งานหน้าหลัก}
-% TODO: อธิบายเมนู ข้อมูล และปุ่มสำคัญของผู้ใช้ทั่วไป
+\subsection{การตั้งค่าโปรไฟล์}
+ที่หน้าหลัก กดไอคอนโปรไฟล์บริเวณมุมซ้ายบนข้างชื่อผู้ใช้งาน
+เพื่อเข้าสู่หน้าโปรไฟล์ จากนั้นเลือกแก้ไขรูปหรือชื่อได้ตามหมายเลขที่กำกับในภาพ
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/profile/open-profile.png}
+        \caption{กดไอคอนโปรไฟล์ที่มุมซ้ายบนของหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/profile/profile-numbered.png}
+        \caption{ตำแหน่งเปลี่ยนรูปและเปลี่ยนชื่อในหน้าโปรไฟล์}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าโปรไฟล์และตำแหน่งแก้ไขข้อมูลผู้ใช้งาน}
+    \label{fig:profile-settings}
+\end{figure}
 
-\subsection{การตั้งค่าข้อมูลผู้ใช้งาน}
-% TODO: เพิ่มขั้นตอนกรอกและแก้ไขข้อมูลตามหน้าจอจริง
-
-\subsection{การออกแบบแผนการวิ่งเฉพาะบุคคล}
-% TODO: เพิ่มขั้นตอนกำหนดข้อมูล สร้างแผน และตรวจสอบผลลัพธ์
-
-\subsection{การลงตารางซ้อม}
 \begin{enumerate}[label=\arabic*)]
-    \item ในหน้าเลือกตารางซ้อม เลือกประเภทหรือระยะทางการวิ่งที่ต้องการ
-    \item ตรวจสอบชื่อแผน ระดับ และระยะเวลาของตารางซ้อมที่แสดง
-    \item อ่านรายละเอียดประเภทการฝึกซ้อมและจำนวนวันซ้อมต่อสัปดาห์
-    แล้วเลือกตารางที่ต้องการเพื่อตรวจสอบรายละเอียดก่อนลงทะเบียน
+    \item \textbf{การเปลี่ยนรูปโปรไฟล์ (หมายเลข 1)}
+    กดไอคอนกล้องที่อยู่ข้างรูปโปรไฟล์ตามหมายเลข 1
+    จากนั้นเลือกรูปที่ต้องการและดำเนินการตามหน้าจอที่แอปพลิเคชันแสดง
+    เมื่อตั้งค่าเสร็จ ให้กลับมาตรวจสอบรูปในหน้าโปรไฟล์
+    \item \textbf{การเปลี่ยนชื่อผู้ใช้งาน (หมายเลข 2)}
+    กดไอคอนดินสอด้านขวาของชื่อตามหมายเลข 2
+    ระบบจะแสดงหน้าต่างแก้ไขชื่อ ให้แก้ไขข้อความในช่องชื่อแล้วกด บันทึก
+    หากไม่ต้องการแก้ไข ให้กด ยกเลิก
 \end{enumerate}
 \begin{figure}[H]
     \centering
-    \IfFileExists{images/schedule/schedule-01.jpg}{%
-        \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-01.jpg}%
-    }{%
-        \fbox{\parbox[c][5cm][c]{0.65\textwidth}{\centering
-        รอภาพหน้าเลือกตารางซ้อม\\
-        \texttt{schedule-01.jpg}}}%
-    }
-    \caption{หน้าเลือกตารางซ้อม}
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/profile/edit-name.jpg}
+    \caption{หน้าต่างแก้ไขชื่อผู้ใช้งาน}
+    \label{fig:profile-edit-name}
+\end{figure}
+% TODO: เพิ่มภาพหน้าจอเลือกและยืนยันรูปโปรไฟล์เมื่อมีภาพประกอบ
+
+
+\subsection{การเลือกตารางซ้อม}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าลงทะเบียนตารางซ้อม เลือกระยะทางที่ต้องการ เช่น 5K, 10K หรือ Half Marathon
+    \item ตรวจสอบชื่อโปรแกรม ระยะเวลาฝึก และคำอธิบายของตารางซ้อมที่แสดง
+    \item อ่านองค์ประกอบการซ้อมแต่ละประเภท รวมถึงปริมาณการฝึกและจำนวนวันต่อสัปดาห์
+    \item กดปุ่ม บันทึกและลงทะเบียนตารางซ้อม เพื่อไปกำหนดตารางรายสัปดาห์
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-01.jpg}
+    \caption{การเลือกโปรแกรมและตรวจสอบองค์ประกอบตารางซ้อม}
     \label{fig:schedule-selection}
 \end{figure}
 
-\subsection{การลงทะเบียนตารางซ้อม}
+\subsection{การลงทะเบียนและจัดตารางซ้อมรายสัปดาห์}
 \begin{enumerate}[label=\arabic*)]
-    \item ตรวจสอบชื่อแผนและระดับของตารางซ้อมที่เลือก
-    \item เลือกระยะเวลาฝึกซ้อมและสัปดาห์ที่ต้องการเริ่มซ้อมตามตัวเลือกที่แสดง
-    \item ตรวจสอบจำนวนวันซ้อมแต่ละประเภท และกำหนดประเภทการซ้อมในแต่ละวันของสัปดาห์
-    \item ตรวจสอบข้อมูลก่อนดำเนินการลงทะเบียนตารางซ้อม
+    \item ที่หน้าลงตารางซ้อม ตรวจสอบชื่อโปรแกรมและระดับที่เลือกไว้
+    \item เลือกระยะเวลาฝึกจากตัวเลือกที่แสดง เช่น 6 ถึง 10 สัปดาห์ในภาพตัวอย่าง
+    \item ในส่วนจัดตารางรายสัปดาห์ เลือกประเภทการซ้อม เช่น Easy Run หรือ Long Run
+    แล้วแตะวันที่ต้องการลงตารางในแถววันจันทร์ถึงวันอาทิตย์
+    \item ตรวจสอบจำนวนครั้งที่เหลือของการซ้อมแต่ละประเภท และจัดตารางของสัปดาห์นั้นให้ครบ
+    \item ตรวจสอบตารางก่อนบันทึก โดยขั้นตอนการลงตารางซ้อมของสัปดาห์ถัดไป
+    อธิบายเพิ่มเติมในหัวข้อถัดไป
 \end{enumerate}
 \begin{figure}[H]
     \centering
-    \IfFileExists{images/schedule/schedule-02.jpg}{%
-        \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-02.jpg}%
-    }{%
-        \fbox{\parbox[c][5cm][c]{0.65\textwidth}{\centering
-        รอภาพหน้าลงทะเบียนตารางซ้อม\\
-        \texttt{schedule-02.jpg}}}%
-    }
-    \caption{หน้าลงทะเบียนตารางซ้อมและกำหนดวันฝึกซ้อม}
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/schedule-02.jpg}
+    \caption{การเลือกระยะเวลาฝึกและลงตารางซ้อมรายสัปดาห์}
     \label{fig:schedule-registration}
 \end{figure}
-% TODO: ใส่ภาพ schedule-01.jpg และ schedule-02.jpg ใน images/schedule เมื่อได้รับไฟล์ในเครื่อง
-% TODO: ตรวจสอบชื่อปุ่มยืนยันและเพิ่มภาพผลหลังลงทะเบียนตารางซ้อมสำเร็จ
 
+% TODO: เพิ่มภาพส่วนท้ายของหน้าลงตารางซ้อมและผลหลังยืนยันการลงทะเบียนสำเร็จ
 
-\subsection{การปรับแผนการวิ่ง}
-% TODO: เพิ่มขั้นตอนปรับแผนและตรวจสอบแผนหลังปรับ
+\subsubsection{การลงตารางซ้อมของสัปดาห์ถัดไป}
+หากต้องการลงตารางซ้อมของสัปดาห์ถัดไปหลังจากจัดตารางสัปดาห์แรกแล้ว
+สามารถกลับเข้ามาจัดตารางเพิ่มเติมได้ดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าหลัก เปิดเมนูด้านขวา แล้วกด ตารางซ้อม ตามกรอบในภาพ
+    \item ตรวจสอบหมายเลขสัปดาห์ในหน้าลงตารางซ้อมให้ตรงกับสัปดาห์ที่ต้องการจัด
+    เช่น สัปดาห์ที่ 2 ในภาพตัวอย่าง
+    หากต้องการเปลี่ยนสัปดาห์ ให้ใช้ปุ่มลูกศรหรือปุ่ม ไปสัปดาห์ที่ ตามที่ระบบแสดง
+    \item เลือกประเภทการซ้อม เช่น Easy Run หรือ Long Run
+    จากนั้นแตะช่องวันจันทร์ถึงวันอาทิตย์ที่ต้องการลงตาราง
+    โดยตรวจสอบจำนวนครั้งที่เหลือของแต่ละประเภทประกอบด้วย
+    \item จัดตารางของสัปดาห์ที่เลือกให้ครบ แล้วกดปุ่ม บันทึกตารางสัปดาห์
+    \item ตรวจสอบส่วนความคืบหน้าตารางฝึก ซึ่งแสดงจำนวนสัปดาห์ที่จัดครบแล้ว
+    และทำขั้นตอนเดียวกันเมื่อต้องการจัดตารางของสัปดาห์อื่น
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/schedule/next-week-8.png}
+        \caption{เมนูตารางซ้อมบนหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/schedule/next-week-9.png}
+        \caption{การจัดตารางซ้อมของสัปดาห์ที่ 2}
+    \end{subfigure}
+    \caption{การกลับมาลงตารางซ้อมของสัปดาห์ถัดไป}
+    \label{fig:schedule-next-week}
+\end{figure}
 
-\subsection{การใช้งานแผนที่}
-% TODO: เพิ่มภาพและขั้นตอนการใช้งานแผนที่ตามฟังก์ชันจริง
+\subsection{การบันทึกสุขภาวะประจำวัน (Daily Wellness)}
+หน้า Daily Wellness Check-in ใช้สำหรับบันทึกข้อมูลความพร้อมของผู้ใช้งานในแต่ละวัน
+โดยมีขั้นตอนดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item เข้าสู่หน้า Daily Wellness Check-in และตรวจสอบวันที่ที่แสดงด้านบน
+    \item เลื่อนแถบคุณภาพการนอนให้ตรงกับการนอนของตนเอง
+    และระบุจำนวนชั่วโมงนอนด้วยแถบที่แสดงช่วง 1 ถึง 12 ชั่วโมง
+    \item เลื่อนแถบความเมื่อยล้ากล้ามเนื้อและระดับพลังกล้ามเนื้อตามความรู้สึกของตนเอง
+    \item ระบุระดับความเครียดและแรงจูงใจในการออกกำลังกาย
+    \item ตรวจสอบข้อมูลทั้ง 6 รายการ แล้วกดปุ่ม บันทึก
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/schedule/daily-wellness.jpg}
+    \caption{หน้าบันทึกสุขภาวะประจำวัน Daily Wellness Check-in}
+    \label{fig:daily-wellness}
+\end{figure}
+
+\subsection{การใช้งานเซสชันการวิ่ง}
+ผู้ใช้สามารถเลือกประเภทการวิ่งและภารกิจรองก่อนเริ่มวิ่ง
+ตรวจสอบภารกิจระหว่างวิ่ง และยืนยันจบการวิ่งได้ตามขั้นตอนต่อไปนี้
+
+\subsubsection{การเข้าสู่หน้าเซสชันและเลือกประเภทการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าหลัก กดปุ่ม เริ่มวิ่ง ตามกรอบในภาพ
+    เพื่อเข้าสู่หน้าเลือกประเภทการวิ่ง
+    \item เลือกประเภทการวิ่งที่ต้องการ ได้แก่ Road, Park, City, Treadmill หรือ Trail
+    โดยภาพตัวอย่างแสดงการเลือก Park
+    \item ตรวจสอบภารกิจหลักประจำวัน (Main Quest) ที่ระบบแสดง
+    เช่น Easy Run ตามระยะเวลาที่กำหนด
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-01.png}
+        \caption{ปุ่มเริ่มวิ่งบนหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-02.png}
+        \caption{ตัวเลือกประเภทการวิ่งและภารกิจหลัก}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าเลือกประเภทการวิ่ง}
+    \label{fig:session-start}
+\end{figure}
+
+\subsubsection{การเลือกภารกิจรองและเริ่มต้นการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item หลังเลือกประเภทการวิ่ง ตรวจสอบรายการภารกิจรอง (Side Quest)
+    และเลือกภารกิจที่ต้องการทำระหว่างวิ่ง โดยอ่านเงื่อนไขและรางวัลของแต่ละภารกิจ
+    \item กดปุ่ม เริ่มต้นการวิ่ง ด้านล่างของหน้าจอ
+    \item ระบบแสดงหน้าเซสชันการวิ่ง ซึ่งมีระยะทาง เวลา ความเร็ว
+    แผนที่ และสถานะภารกิจสำหรับติดตามระหว่างวิ่ง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-03.png}
+        \caption{รายการภารกิจรองและปุ่มเริ่มต้นการวิ่ง}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-04.png}
+        \caption{หน้าติดตามการวิ่งและปุ่มดูภารกิจ\\หมายเลข 1}
+    \end{subfigure}
+    \caption{การเลือกภารกิจรองและหน้าจอระหว่างวิ่ง}
+    \label{fig:session-running}
+\end{figure}
+
+\subsubsection{การดูภารกิจระหว่างวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าเซสชันการวิ่ง กดบริเวณ ภารกิจ หมายเลข 1
+    ในภาพที่ \ref{fig:session-running}
+    \item ระบบแสดงหน้าต่าง ภารกิจระหว่างวิ่ง
+    ซึ่งแสดงภารกิจหลัก ความคืบหน้า และรายการภารกิจรอง
+    \item ตรวจสอบเงื่อนไขของภารกิจรองที่ต้องการทำ
+    โดยในภาพตัวอย่างมีปุ่ม จบภารกิจ ที่รายการภารกิจรองแต่ละรายการ
+    \item กดเครื่องหมายกากบาทที่มุมขวาบน เพื่อปิดหน้าต่างภารกิจและกลับสู่หน้าวิ่ง
+\end{enumerate}
+
+\subsubsection{การจบการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item เมื่อต้องการสิ้นสุดเซสชัน กดปุ่ม จบการวิ่ง หมายเลข 2
+    ในภาพที่ \ref{fig:session-running}
+    \item ระบบแสดงข้อความ ต้องการจบการวิ่งไหม?
+    ให้กด จบการวิ่ง เพื่อยืนยันและไปหน้าสรุปผลตามข้อความที่ระบบแสดง
+    \item หากต้องการวิ่งต่อ ให้กด วิ่งต่อ เพื่อกลับสู่เซสชันการวิ่ง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-05.png}
+        \caption{หน้าต่างภารกิจหลักและภารกิจรองระหว่างวิ่ง}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-06.png}
+        \caption{หน้าต่างยืนยันการจบการวิ่ง}
+    \end{subfigure}
+    \caption{การตรวจสอบภารกิจและยืนยันจบการวิ่ง}
+    \label{fig:session-quests-finish}
+\end{figure}
+
+\subsubsection{การตรวจสอบสรุปผลหลังการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item หลังยืนยันจบการวิ่ง ระบบแสดงหน้าสรุปผล
+    ให้ตรวจสอบแผนที่เส้นทางการวิ่ง ระยะทาง เวลา Pace เฉลี่ย และแคลอรี
+    \item เลือกระดับความหนักที่รู้สึกขณะออกกำลังกาย (RPE)
+    โดยเลื่อนตัวเลือกจากระดับเบาสบายไปจนถึงหนักสุดให้ตรงกับการวิ่งครั้งนั้น
+    \item เลือกระดับความเครียดจากผ่อนคลายไปจนถึงเครียดมาก
+    และกรอกข้อมูลอารมณ์หลังวิ่งในส่วนที่ระบบแสดง
+    \item เมื่อตรวจสอบและกรอกข้อมูลเรียบร้อยแล้ว กดปุ่ม ส่งข้อมูล
+\end{enumerate}
+
+\subsubsection{การตรวจสอบรางวัลหลังการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item เมื่อระบบแสดงหน้า รางวัลการวิ่งรอบนี้
+    ให้ตรวจสอบจำนวนเหรียญ (COIN) และค่าประสบการณ์ (EXP) ที่ได้รับ
+    โดยรายการบนหน้านี้เป็นรางวัลที่เซิร์ฟเวอร์ยืนยันสำหรับการวิ่งรอบนั้น
+    \item ตรวจสอบยอดเหรียญปัจจุบัน ระดับ (Level) และแถบความคืบหน้าของ EXP
+    ในส่วนยอดปัจจุบัน
+    \item กดปุ่ม กลับหน้าหลัก เพื่อกลับไปยังหน้าหลักของแอป
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-07.png}
+        \caption{สรุปผลการวิ่งและแบบประเมินหลังวิ่ง}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-session/session-08.png}
+        \caption{รางวัลการวิ่งและยอดปัจจุบัน}
+    \end{subfigure}
+    \caption{หน้าสรุปผลหลังการวิ่งและหน้ารางวัลการวิ่ง}
+    \label{fig:session-summary-rewards}
+\end{figure}
+
+\subsection{การดูสถิติและประวัติการวิ่ง}
+ผู้ใช้สามารถดูภาพรวมการวิ่งและตรวจสอบรายละเอียดของการวิ่งที่บันทึกไว้ได้
+โดยหน้าสถิตินับเฉพาะการวิ่งที่จบแล้ว และแสดงข้อมูลตามเวลาประเทศไทย
+
+\subsubsection{การเข้าสู่หน้าสถิติการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าหลัก เปิดเมนูด้านขวา แล้วกด สถิติ ตามกรอบในภาพ
+    \item เลือกช่วงเวลาที่ต้องการดู ได้แก่ 7 วัน 30 วัน หรือ ทั้งหมด
+    \item ตรวจสอบข้อมูลสรุป ได้แก่ ระยะทางรวม จำนวนครั้ง เวลารวม
+    เพซเฉลี่ย ระยะวิ่งไกลที่สุด และค่า RPE เฉลี่ย
+    \item ดูส่วนแนวโน้มระยะทาง ซึ่งแสดงระยะทางรายวันของช่วงเวลาที่เลือก
+    หากไม่มีระยะทางในช่วงกราฟ ระบบจะแสดงข้อความแจ้งดังภาพตัวอย่าง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-stats/stats-10.png}
+        \caption{เมนูสถิติบนหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/running-stats/stats-11.png}
+        \caption{สถิติการวิ่ง แนวโน้มระยะทาง และประวัติการวิ่ง}
+    \end{subfigure}
+    \caption{การเปิดหน้าสถิติและเลือกช่วงเวลาที่ต้องการดู}
+    \label{fig:running-statistics}
+\end{figure}
+
+\subsubsection{การดูรายละเอียดประวัติการวิ่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าสถิติ เลื่อนลงไปที่ส่วน ประวัติการวิ่ง
+    แล้วกดรายการวันที่ต้องการดู
+    \item ระบบแสดงหน้าต่างรายละเอียดของการวิ่งครั้งนั้น
+    ซึ่งประกอบด้วยวันที่ แผนที่เส้นทาง ระยะทาง เวลา และเพซ
+    \item ตรวจสอบข้อมูลชีพจรเฉลี่ยและสูงสุด หากมีข้อมูลบันทึกไว้
+    รวมถึงส่วนความรู้สึกหลังวิ่ง ได้แก่ ความหนัก RPE ความเครียด
+    อารมณ์ และอาการบาดเจ็บ
+    ข้อมูลที่ไม่มีค่าจะแสดงเป็นขีดตามภาพตัวอย่าง
+    \item กดเครื่องหมายกากบาทที่มุมขวาบน เพื่อปิดรายละเอียด
+    และกลับไปยังหน้าสถิติการวิ่ง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/running-stats/stats-12.png}
+    \caption{รายละเอียดประวัติการวิ่งและข้อมูลความรู้สึกหลังวิ่ง}
+    \label{fig:running-history-details}
+\end{figure}
+
+\subsection{การดูอันดับผู้ใช้งาน}
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าหลัก กดปุ่ม อันดับ ซึ่งมีสัญลักษณ์ถ้วยรางวัลบริเวณเมนูด้านซ้าย
+    ตามกรอบสีแดงในภาพ
+    \item เมื่อเข้าสู่หน้าจัดอันดับ ตรวจสอบประเภทการจัดอันดับจากเมนูด้านบน
+    โดยภาพตัวอย่างแสดงประเภท รายบุคคล และเกณฑ์ระยะทางต่อสัปดาห์
+    \item ตรวจสอบช่วงวันที่ที่ใช้จัดอันดับใต้แถบตัวเลือก
+    จากนั้นดูผู้ใช้งานอันดับ 1 ถึง 3 ในส่วนแท่นรางวัล และอันดับถัดไปในรายการด้านล่าง
+    \item ดูส่วน อันดับของคุณ ที่ด้านล่างเพื่อตรวจสอบอันดับและระยะทางของตนเอง
+    หากระบบแสดง ไม่มีอันดับ ให้ตรวจสอบสถานะที่แสดงในส่วนนี้อีกครั้งภายหลัง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/ranking/open-ranking.png}
+        \caption{กดปุ่มอันดับจากหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/ranking/leaderboard.png}
+        \caption{หน้าจัดอันดับและส่วนอันดับของคุณ}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าจัดอันดับและตรวจสอบอันดับผู้ใช้งาน}
+    \label{fig:ranking-overview}
+\end{figure}
+
+\subsection{การเพิ่มเพื่อนและจัดการคำขอเป็นเพื่อน}
+ที่หน้าหลัก กดปุ่ม เพื่อน บริเวณเมนูด้านซ้ายตามกรอบสีแดง
+เพื่อเข้าสู่หน้า Friends ซึ่งมีแท็บ เพื่อนของฉัน คำขอที่ได้รับ และส่งแล้ว
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/friends/friends-02.png}
+        \caption{กดปุ่มเพื่อนจากหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/friends/friends-03.png}
+        \caption{หน้า Friends และปุ่มเพิ่มเพื่อน}
+    \end{subfigure}
+    \caption{การเข้าสู่ส่วนเพื่อนและตำแหน่งปุ่มเพิ่มเพื่อน}
+    \label{fig:friends-open}
+\end{figure}
+
+\subsubsection{การส่งคำขอเป็นเพื่อน}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้า Friends กดปุ่มรูปคนพร้อมเครื่องหมายบวกที่อยู่ข้างช่องค้นหา
+    \item ในแผงเพิ่มเพื่อน กรอก UID ของเพื่อนจำนวน 10 ตัวในช่อง UID ของเพื่อน
+    โดยใช้ UID จากหน้าโปรไฟล์ของผู้ที่ต้องการเพิ่ม
+    \item ตรวจสอบ UID ให้ถูกต้อง แล้วกดปุ่ม ส่งคำขอเป็นเพื่อน
+    \item เลือกแท็บ ส่งแล้ว เพื่อตรวจสอบคำขอที่ส่งไป
+    หากต้องการยกเลิก ให้กด ยกเลิกคำขอ ในรายการนั้น
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/friends/friends-04.png}
+    \caption{การกรอก UID เพื่อส่งคำขอเป็นเพื่อนและรายการคำขอที่ส่งแล้ว}
+    \label{fig:friends-send-request}
+\end{figure}
+
+\subsubsection{การตอบรับหรือปฏิเสธคำขอเป็นเพื่อน}
+ในหน้า Friends เลือกแท็บ คำขอที่ได้รับ
+แล้วตรวจสอบชื่อและ UID ของผู้ส่งคำขอก่อนดำเนินการ
+โดยเลือกได้ดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item \textbf{ตอบรับคำขอ (หมายเลข 1)}
+    กดปุ่ม ตอบรับ เพื่อเพิ่มผู้ส่งคำขอเป็นเพื่อน
+    \item \textbf{ปฏิเสธคำขอ (หมายเลข 2)}
+    กด ปฏิเสธ หากไม่ต้องการรับคำขอเป็นเพื่อนจากผู้ใช้งานนั้น
+\end{enumerate}
+
+\subsubsection{การตรวจสอบเมื่อเพิ่มเพื่อนสำเร็จ}
+หลังตอบรับคำขอ ให้เลือกแท็บ เพื่อนของฉัน
+เพื่อตรวจสอบว่าชื่อและ UID ของเพื่อนปรากฏในรายการแล้ว
+หากมีเพื่อนหลายคน สามารถใช้ช่องค้นหาชื่อเพื่อนเพื่อค้นหารายการที่ต้องการได้
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.38\textheight,keepaspectratio]{images/friends/friends-05.png}
+        \caption{ปุ่มตอบรับหมายเลข 1 และปฏิเสธหมายเลข 2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.38\textheight,keepaspectratio]{images/friends/friends-06.png}
+        \caption{รายชื่อในแท็บเพื่อนของฉันหลังเพิ่มเพื่อนสำเร็จ}
+    \end{subfigure}
+    \caption{การจัดการคำขอและตรวจสอบการเพิ่มเพื่อนสำเร็จ}
+    \label{fig:friends-accept-success}
+\end{figure}
+
+\subsection{การใช้งานร้านค้า}
+ที่หน้าหลัก กดปุ่ม ร้านค้า บริเวณเมนูด้านซ้ายตามกรอบสีแดง
+เพื่อเข้าสู่หน้าร้านค้าและเลือกไอเทมสำหรับตัวละคร
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/shop/open-shop.png}
+        \caption{กดปุ่มร้านค้าจากหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/shop/shop-items.png}
+        \caption{หน้าร้านค้า ปุ่มซื้อ และปุ่มดูตัวอย่างบนตัวละคร}
+    \end{subfigure}
+    \caption{การเข้าสู่ร้านค้าและเลือกไอเทม}
+    \label{fig:shop-overview}
+\end{figure}
+
+\subsubsection{การเลือกและซื้อไอเทม}
+\begin{enumerate}[label=\arabic*)]
+    \item เลือกหมวดหมู่ไอเทม เช่น หมวก หน้า หรือเสื้อ
+    แล้วกดรูปไอเทมที่ต้องการจากรายการด้านล่าง
+    \item ตรวจสอบตัวอย่างไอเทมและราคาที่แสดงบนปุ่มซื้อ
+    พร้อมตรวจสอบจำนวนเหรียญคงเหลือบริเวณมุมขวาบน
+    \item เมื่อต้องการซื้อ ให้กดปุ่ม ซื้อ ที่แสดงราคาเป็นจำนวนเหรียญ
+    แล้วดำเนินการตามข้อความที่ระบบแสดง
+    \item เมื่อต้องการสวมใส่ไอเทมที่ซื้อ ให้เข้าสู่หน้าแต่งตัว
+    เลือกไอเทมและบันทึกการแต่งตัวตามขั้นตอนในหัวข้อการแต่งตัวและสวมใส่ชุดให้ตัวละคร
+\end{enumerate}
+
+\subsubsection{การดูตัวอย่างไอเทมเมื่อสวมใส่}
+หลังเลือกไอเทมในร้านค้า กดปุ่มรูปคนที่อยู่ด้านขวาของปุ่มซื้อ
+เพื่อดูโมเดลตัวละครขณะสวมใส่ไอเทมที่เลือก
+โดยหมายเลข 1 ในภาพแสดงบริเวณตัวอย่างโมเดลตัวละคร
+ผู้ใช้งานสามารถตรวจสอบลักษณะของไอเทมบนตัวละครก่อนตัดสินใจซื้อได้
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/shop/item-preview.png}
+    \caption{ตัวอย่างโมเดลตัวละครเมื่อสวมใส่ไอเทมในร้านค้า}
+    \label{fig:shop-item-preview}
+\end{figure}
+% TODO: เพิ่มภาพข้อความยืนยันการซื้อและผลหลังซื้อสำเร็จเมื่อมีภาพประกอบ
+
+\subsection{การแต่งตัวและสวมใส่ชุดให้ตัวละคร}
+ที่หน้าหลัก กดปุ่ม แต่งตัว ซึ่งมีสัญลักษณ์ไม้แขวนเสื้อบริเวณเมนูด้านซ้าย
+ตามกรอบสีแดง เพื่อเข้าสู่หน้าแต่งตัวของตัวละคร
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/outfit/outfit-07.png}
+        \caption{กดปุ่มแต่งตัวจากหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{images/outfit/outfit-08.png}
+        \caption{หน้าแต่งตัวและหมวดหมู่ไอเทม}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าแต่งตัวของตัวละคร}
+    \label{fig:outfit-open}
+\end{figure}
+
+ผู้ใช้งานสามารถเลือกหมวดหมู่ไอเทม เช่น ผม หมวก หน้า หรือเสื้อ
+แล้วเลือกไอเทมที่มีอยู่ โดยมีขั้นตอนเลือกชุดและบันทึกดังนี้
+\begin{enumerate}[label=\arabic*)]
+    \item \textbf{เลือกชุดที่ต้องการสวมใส่ (หมายเลข 1)}
+    ในหมวดเสื้อ กดรูปเสื้อที่ต้องการจากรายการตามกรอบหมายเลข 1
+    ตัวละครด้านบนจะแสดงตัวอย่างเสื้อที่เลือก
+    และรายการที่เลือกจะแสดงข้อความ เลือกอยู่
+    \item \textbf{บันทึกการแต่งตัว (หมายเลข 2)}
+    ตรวจสอบตัวอย่างการแต่งตัวของตัวละคร
+    แล้วกดปุ่ม บันทึกการแต่งตัว ตามหมายเลข 2 เพื่อบันทึกชุดที่เลือก
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/outfit/outfit-09.png}
+    \caption{การเลือกเสื้อหมายเลข 1 และบันทึกการแต่งตัวหมายเลข 2}
+    \label{fig:outfit-select-save}
+\end{figure}
 
 \subsection{การใช้งานคลับสำหรับผู้ใช้ทั่วไป}
-% TODO: เพิ่มหัวข้อย่อยและขั้นตอนตามเมนูคลับที่ผู้ใช้ทั่วไปใช้งานได้จริง
+ที่หน้าหลัก กดปุ่ม คลับ บริเวณเมนูด้านซ้ายตามกรอบสีแดง
+เพื่อเข้าสู่หน้า Club ซึ่งแสดงช่องค้นหาชื่อคลับ รายการคลับ
+และเมนูคำเชิญและคำขอของฉัน
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-03.png}
+        \caption{กดปุ่มคลับจากหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-04.png}
+        \caption{เมนูคำเชิญและคำขอหมายเลข 1 และปุ่มดูคลับหมายเลข 2}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าคลับและเมนูสำหรับผู้ใช้ทั่วไป}
+    \label{fig:club-user-open}
+\end{figure}
+
+\subsubsection{การดูคลับและส่งคำขอเข้าร่วม}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้า Club ค้นหาชื่อคลับในช่องค้นหา หรือเลือกจากส่วนค้นพบคลับ
+    \item กดปุ่ม ดูคลับ ตามหมายเลข 2 ในภาพที่ \ref{fig:club-user-open}
+    เพื่อเปิดหน้ารายละเอียดคลับ
+    \item ตรวจสอบชื่อคลับ จำนวนสมาชิก คำขวัญคลับ และรายชื่อสมาชิกที่แสดง
+    \item หากต้องการเข้าร่วม ให้กดปุ่ม ขอเข้าร่วมคลับ ที่ด้านล่าง
+    แล้วตรวจสอบสถานะคำขอในเมนูคำเชิญและคำขอของฉัน
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/club-user/club-05.png}
+    \caption{หน้ารายละเอียดคลับและปุ่มขอเข้าร่วมคลับ}
+    \label{fig:club-user-join}
+\end{figure}
+
+\subsubsection{การดูคำเชิญและคำขอที่ส่ง}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้า Club กดเมนู คำเชิญและคำขอของฉัน
+    ตามหมายเลข 1 ในภาพที่ \ref{fig:club-user-open}
+    \item เลือกแท็บ คำเชิญ เพื่อตรวจสอบคำเชิญเข้าร่วมคลับที่ได้รับ
+    หากไม่มีคำเชิญ ระบบจะแสดงข้อความ ยังไม่มีรายการ ตามภาพตัวอย่าง
+    \item เลือกแท็บ คำขอที่ส่ง เพื่อตรวจสอบคำขอเข้าร่วมคลับที่ส่งไว้
+    \item หากต้องการยกเลิกคำขอ ให้กด ยกเลิกคำขอ ใต้ชื่อคลับในรายการนั้น
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-06.png}
+        \caption{แท็บคำเชิญที่ได้รับ}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-07.png}
+        \caption{แท็บคำขอที่ส่งและปุ่มยกเลิกคำขอ}
+    \end{subfigure}
+    \caption{การตรวจสอบคำเชิญและคำขอเข้าร่วมคลับ}
+    \label{fig:club-user-requests}
+\end{figure}
+
+\subsubsection{การจัดการคลับในส่วนของสมาชิก}
+เมื่อเป็นสมาชิกคลับ สามารถดูข้อมูลคลับ รายชื่อสมาชิก และเมนูจัดการคลับที่ระบบแสดงได้
+โดยปุ่มจัดการคลับในภาพตัวอย่างของสมาชิกใช้เข้าสู่เมนูออกจากคลับ
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าคลับของเรา กดปุ่ม จัดการคลับ ตามหมายเลข 2
+    \item ระบบแสดงเมนู ออกจากคลับ หากต้องการออก ให้เลือกเมนูดังกล่าว
+    และดำเนินการตามข้อความยืนยันที่ระบบแสดง
+    หากต้องการอยู่ในคลับต่อ ให้ปิดเมนูโดยไม่เลือกออกจากคลับ
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-08.png}
+        \caption{รายชื่อสมาชิกหมายเลข 1 และปุ่มจัดการคลับหมายเลข 2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-user/club-09.png}
+        \caption{เมนูออกจากคลับสำหรับสมาชิก}
+    \end{subfigure}
+    \caption{การเปิดเมนูจัดการคลับในส่วนของสมาชิก}
+    \label{fig:club-user-manage}
+\end{figure}
+
+\subsubsection{การดูโปรไฟล์สมาชิกคนอื่น}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าคลับของเรา กดรายการสมาชิกที่ต้องการดู
+    เช่น บริเวณหมายเลข 1 ในภาพที่ \ref{fig:club-user-manage}
+    \item ระบบแสดงหน้าต่างโปรไฟล์ผู้เล่น ซึ่งประกอบด้วยชื่อ UID คลับ
+    ระดับ บทบาท ตัวละคร และระยะทางสะสมของผู้เล่น
+    \item หากต้องการเพิ่มผู้เล่นเป็นเพื่อน ให้กดปุ่ม เพิ่มเพื่อน
+    หากต้องการปิดหน้าต่าง ให้กดเครื่องหมายกากบาทด้านขวาบน
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/club-user/club-10.png}
+    \caption{หน้าต่างโปรไฟล์สมาชิกคนอื่นจากหน้าคลับ}
+    \label{fig:club-user-player-profile}
+\end{figure}
+
+
+
+\subsection{การตั้งค่าและการลบบัญชี}
+\subsubsection{การเข้าสู่หน้าตั้งค่า}
+\begin{enumerate}[label=\arabic*)]
+    \item ที่หน้าหลัก เปิดเมนูด้านขวา แล้วกด ตั้งค่า ตามกรอบในภาพ
+    \item ระบบแสดงหน้าตั้งค่า ซึ่งมีส่วนบัญชีและโปรไฟล์ การเชื่อมต่อ และอื่น ๆ
+    โดยเมนู ออกจากระบบ และ ลบบัญชี อยู่ในส่วนอื่น ๆ ด้านล่าง
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/settings/settings-13.png}
+        \caption{เมนูตั้งค่าบนหน้าหลัก}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/settings/settings-14.png}
+        \caption{หน้าตั้งค่าและเมนูจัดการบัญชี}
+    \end{subfigure}
+    \caption{การเข้าสู่หน้าตั้งค่า}
+    \label{fig:settings-account-menu}
+\end{figure}
+
+\subsubsection{การลบบัญชี}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าตั้งค่า เลื่อนลงไปที่ส่วน อื่น ๆ แล้วกด ลบบัญชี
+    \item อ่านข้อความยืนยัน ลบบัญชีถาวร? ให้ครบถ้วน
+    ระบบแจ้งว่าจะไม่สามารถใช้งานบัญชีเดิมได้
+    และบัญชีจะไม่ปรากฏในรายชื่อเพื่อนและอันดับเมื่อโหลดข้อมูลใหม่
+    \item หากต้องการยืนยันการลบบัญชี ให้กด ลบบัญชี ในหน้าต่างยืนยัน
+    หากต้องการเก็บบัญชีไว้ ให้กด ยกเลิก
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth,height=0.40\textheight,keepaspectratio]{images/settings/settings-16.png}
+    \caption{หน้าต่างยืนยันการลบบัญชีถาวร}
+    \label{fig:settings-delete-account}
+\end{figure}
 
 \section{คู่มือการใช้งานสำหรับหัวหน้าคลับ}
-\subsection{การเข้าสู่ส่วนการจัดการคลับ}
-% TODO: อธิบายวิธีเข้าสู่เมนูสำหรับหัวหน้าคลับตามระบบจริง
+หัวหน้าคลับสามารถสร้างคลับ แก้ไขข้อมูลคลับ ตรวจสอบคำขอเข้าร่วม
+กำหนดสิทธิ์ตามบทบาท และจัดการสมาชิกผ่านหน้าคลับของเราได้ดังนี้
 
-\subsection{การจัดการข้อมูลคลับ}
-% TODO: เพิ่มขั้นตอนตามสิทธิ์และเมนูที่หัวหน้าคลับใช้งานได้จริง
+\subsection{การสร้างคลับ}
+\begin{enumerate}[label=\arabic*)]
+    \item เข้าสู่หน้า Club แล้วกดปุ่ม สร้างคลับ ตามกรอบที่แสดงในภาพ
+    \item ในหน้าสร้างคลับ กด เลือกรูปโปรไฟล์คลับ หากต้องการเพิ่มรูป
+    โดยรองรับไฟล์ JPG, PNG หรือ WebP ขนาดไม่เกิน 2 MB
+    \item กรอกชื่อคลับ และคำอธิบายและกติกาคลับ
+    โดยชื่อคลับกรอกได้ไม่เกิน 40 ตัวอักษร และคำอธิบายกรอกได้ไม่เกิน 500 ตัวอักษร
+    \item ตรวจสอบข้อมูลแล้วกดปุ่ม สร้างคลับ
+    รูปแบบการเข้าร่วมที่แสดงในภาพเป็นแบบอนุมัติก่อนเข้าร่วม
+    ซึ่งผู้ดูแลจะตรวจคำขอก่อนเพิ่มสมาชิกเข้าคลับ
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-owner/owner-11.png}
+        \caption{ปุ่มสร้างคลับในหน้า Club}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-owner/owner-12.png}
+        \caption{แบบฟอร์มข้อมูลสำหรับสร้างคลับ}
+    \end{subfigure}
+    \caption{ขั้นตอนการสร้างคลับ}
+    \label{fig:club-owner-create}
+\end{figure}
 
-\subsection{การจัดการสมาชิกคลับ}
-% TODO: เพิ่มขั้นตอนตามสิทธิ์และเมนูที่หัวหน้าคลับใช้งานได้จริง
+\subsection{การแก้ไขข้อมูลและเปิดเมนูจัดการคลับ}
+เมื่ออยู่ในหน้าคลับของเรา หัวหน้าคลับสามารถใช้ปุ่มตามหมายเลขในภาพที่
+\ref{fig:club-owner-overview} เพื่อแก้ไขข้อมูลหรือเข้าสู่ส่วนจัดการคลับ
+\begin{enumerate}[label=\arabic*)]
+    \item กดไอคอนดินสอที่รูปคลับ หมายเลข 1 เพื่อเปลี่ยนรูปโปรไฟล์คลับ
+    \item กดไอคอนดินสอข้างชื่อคลับ หมายเลข 2 เพื่อแก้ไขชื่อคลับ
+    \item กดไอคอนดินสอในส่วนคำขวัญคลับ หมายเลข 3 เพื่อแก้ไขข้อความของคลับ
+    \item กดปุ่ม จัดการคลับ หมายเลข 4 เพื่อเปิดเมนูจัดการ
+    ซึ่งประกอบด้วย คำขอสมัคร บทบาทและสิทธิ์ และออกจากคลับ
+    \item กดรายการสมาชิก หมายเลข 5 เพื่อเปิดโปรไฟล์ของสมาชิกคนนั้น
+    และใช้คำสั่งจัดการสมาชิกตามที่อธิบายในหัวข้อถัดไป
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-owner/owner-13.png}
+        \caption{ตำแหน่งแก้ไขข้อมูลและจัดการคลับ}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.38\textheight,keepaspectratio]{images/club-owner/owner-14.png}
+        \caption{เมนูจัดการคลับสำหรับหัวหน้าคลับ}
+    \end{subfigure}
+    \caption{หน้าคลับและเมนูจัดการของหัวหน้าคลับ}
+    \label{fig:club-owner-overview}
+\end{figure}
 
-\subsection{การใช้งานเมนูอื่นสำหรับหัวหน้าคลับ}
-% TODO: แทนที่หัวข้อนี้ด้วยชื่อฟังก์ชันจริงเมื่อได้รับภาพหน้าจอ
+\subsection{การอนุมัติคำขอเข้าร่วมคลับ}
+\begin{enumerate}[label=\arabic*)]
+    \item กด จัดการคลับ แล้วเลือก คำขอสมัคร หมายเลข 1
+    ในภาพเมนูจัดการคลับ
+    \item ระบบแสดงหน้าคำขอเข้าร่วม พร้อมชื่อผู้ส่งคำขอ
+    \item ตรวจสอบผู้สมัครที่ต้องการรับ แล้วกด อนุมัติ เพื่อรับเข้าคลับ
+    หากไม่ต้องการรับคำขอนั้น ให้กด ปฏิเสธ ที่รายการเดียวกัน
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth,height=0.40\textheight,keepaspectratio]{images/club-owner/owner-15.png}
+    \caption{รายการคำขอเข้าร่วมคลับและปุ่มอนุมัติหรือปฏิเสธ}
+    \label{fig:club-owner-join-requests}
+\end{figure}
+
+\subsection{การจัดการบทบาทและสิทธิ์}
+\begin{enumerate}[label=\arabic*)]
+    \item กด จัดการคลับ แล้วเลือก บทบาทและสิทธิ์ หมายเลข 2
+    ในภาพเมนูจัดการคลับ
+    \item ในหน้าบทบาทและสิทธิ์ เลือกกำหนดสิทธิ์ของ รองหัวหน้าคลับ หรือ สมาชิก
+    โดยหัวหน้าคลับมีทุกสิทธิ์เสมอตามข้อความที่ระบบแสดง
+    \item กดสวิตช์ข้างสิทธิ์ที่ต้องการกำหนด ได้แก่ อนุมัติคำขอเข้าร่วม
+    เชิญสมาชิก นำสมาชิกออก และแก้ไขข้อมูลคลับ
+    สวิตช์สีม่วงแสดงว่าเปิดสิทธิ์ และสีเทาแสดงว่าปิดสิทธิ์
+    \item หากต้องการเปลี่ยนบทบาทของสมาชิก ให้เลือก จัดการบทบาทสมาชิก
+    หรือเปิดโปรไฟล์สมาชิกแล้วกด จัดการสมาชิก ตามหัวข้อถัดไป
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth,height=0.54\textheight,keepaspectratio]{images/club-owner/owner-16.png}
+    \caption{การกำหนดสิทธิ์ของรองหัวหน้าคลับและสมาชิก}
+    \label{fig:club-owner-permissions}
+\end{figure}
+
+\subsection{การดูโปรไฟล์และจัดการสมาชิกคลับ}
+\begin{enumerate}[label=\arabic*)]
+    \item ในหน้าคลับของเรา กดรายการสมาชิกที่ต้องการดู
+    ตามหมายเลข 5 ในภาพที่ \ref{fig:club-owner-overview}
+    \item ระบบแสดงโปรไฟล์ผู้เล่น ซึ่งประกอบด้วยชื่อ UID คลับ ระดับ
+    บทบาท ตัวละคร และระยะทางสะสม
+    \item หากต้องการเปลี่ยนบทบาท ให้กด จัดการสมาชิก หมายเลข 1
+    ในภาพที่ \ref{fig:club-owner-member-management}
+    แล้วเลือกบทบาทที่ต้องการจากเมนู เช่น รองหัวหน้าคลับ หรือ สมาชิก
+    ส่วนตัวเลือก หัวหน้าคลับ มีข้อความกำกับว่าการโอนสิทธิ์จะเพิ่มภายหลัง
+    \item หากต้องการนำสมาชิกออกจากคลับ ให้กด นำออกจากคลับ หมายเลข 2
+    ของโปรไฟล์สมาชิกคนนั้น
+    \item เมื่อตรวจสอบหรือจัดการเรียบร้อยแล้ว กดเครื่องหมายกากบาทที่มุมขวาบน
+    เพื่อปิดหน้าต่างโปรไฟล์
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{images/club-owner/owner-17.png}
+        \caption{โปรไฟล์สมาชิกและปุ่มจัดการสำหรับหัวหน้าคลับ}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{images/club-owner/owner-18.png}
+        \caption{ตัวเลือกบทบาทของสมาชิกคลับ}
+    \end{subfigure}
+    \caption{การดูโปรไฟล์และจัดการสมาชิกคลับ}
+    \label{fig:club-owner-member-management}
+\end{figure}
 
 \section{การออกจากระบบ}
-% TODO: เพิ่มขั้นตอนออกจากระบบและภาพหน้าจอหลังออกจากระบบ
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดหน้าตั้งค่าจากเมนูด้านขวาของหน้าหลัก
+    ตามภาพที่ \ref{fig:settings-account-menu}
+    \item ในส่วน อื่น ๆ กด ออกจากระบบ
+    \item ระบบแสดงหน้าต่าง ออกจากระบบ? พร้อมข้อความแจ้งว่า
+    หากต้องการใช้งานอีกครั้งจะต้องเข้าสู่ระบบใหม่
+    \item กด ออกจากระบบ เพื่อยืนยัน
+    หรือกด ยกเลิก หากต้องการใช้งานต่อโดยยังไม่ออกจากระบบ
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth,height=0.40\textheight,keepaspectratio]{images/settings/settings-15.png}
+    \caption{หน้าต่างยืนยันการออกจากระบบ}
+    \label{fig:settings-logout}
+\end{figure}

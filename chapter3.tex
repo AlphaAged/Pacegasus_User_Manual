@@ -10,8 +10,133 @@
 \subsection{การติดตั้ง Flutter SDK}
 % TODO: เพิ่มขั้นตอนติดตั้ง การตั้งค่า PATH และภาพตรวจสอบความพร้อม
 
-\subsection{การติดตั้งโปรแกรมสำหรับพัฒนา}
-% TODO: เพิ่มขั้นตอนติดตั้งโปรแกรมและส่วนขยายตามเครื่องมือที่ใช้จริง
+\subsection{การติดตั้ง Visual Studio Code}
+Visual Studio Code เป็นโปรแกรมสำหรับเปิดและแก้ไขไฟล์โค้ดของโครงการ
+ขั้นตอนต่อไปนี้เป็นการติดตั้งบนระบบปฏิบัติการ Windows
+\begin{enumerate}[label=\arabic*)]
+    \item ดาวน์โหลดไฟล์ติดตั้ง Visual Studio Code จากเว็บไซต์
+    \url{https://code.visualstudio.com/} โดยเลือกตัวติดตั้งสำหรับ Windows
+    \item เปิดไฟล์ติดตั้งที่ดาวน์โหลดมา อ่านข้อตกลงการใช้งาน
+    แล้วเลือก I accept the agreement เพื่อยอมรับเงื่อนไข
+    จากนั้นกดปุ่ม Next เพื่อดำเนินการต่อ
+\end{enumerate}
+% ภาพที่ผู้ใช้ส่ง: image(20261026-053108).png
+\IfFileExists{images/installation/vscode-license.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/vscode-license.png}
+    \caption{การอ่านและยอมรับข้อตกลงการติดตั้ง Visual Studio Code}
+    \label{fig:vscode-license}
+\end{figure}
+}{}
+\begin{enumerate}[label=\arabic*),start=3]
+    \item ดำเนินการตามหน้าต่างติดตั้งจนถึงหน้าตรวจสอบรายละเอียดก่อนติดตั้ง
+    ตรวจสอบรายละเอียด แล้วกดปุ่ม Install เพื่อเริ่มติดตั้งโปรแกรม
+\end{enumerate}
+% ภาพที่ผู้ใช้ส่ง: image(20261026-053117).png
+\IfFileExists{images/installation/vscode-install.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/vscode-install.png}
+    \caption{การตรวจสอบรายละเอียดและเริ่มติดตั้ง Visual Studio Code}
+    \label{fig:vscode-install}
+\end{figure}
+}{}
+
+
+\subsection{การติดตั้ง Node.js}
+ขั้นตอนต่อไปนี้เป็นการติดตั้ง Node.js บนระบบปฏิบัติการ Windows
+และตรวจสอบค่า Path เพื่อให้เรียกใช้งานจากหน้าต่างคำสั่งได้
+\begin{enumerate}[label=\arabic*)]
+    \item ดาวน์โหลดไฟล์ติดตั้งจาก \url{https://nodejs.org/en/download}
+    โดยเลือกตัวติดตั้งสำหรับ Windows ให้ตรงกับสถาปัตยกรรมของเครื่อง
+    \item เปิดไฟล์ติดตั้งที่ดาวน์โหลดมา อ่านข้อตกลงการใช้งาน
+    แล้วเลือก I accept the terms in the License Agreement
+    จากนั้นกด Next เพื่อดำเนินการต่อ
+    \item ดำเนินการตามหน้าต่างติดตั้งจนถึงหน้า Ready to install Node.js
+    ตรวจสอบรายละเอียด แล้วกด Install เพื่อเริ่มติดตั้ง
+    รอจนติดตั้งเสร็จและปิดหน้าต่างติดตั้ง
+\end{enumerate}
+% ภาพต้นฉบับ: image(20261026-053259).png
+\IfFileExists{images/installation/node-license.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-license.png}
+    \caption{การยอมรับข้อตกลงการติดตั้ง Node.js}
+    \label{fig:node-license}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-053307).png
+\IfFileExists{images/installation/node-install.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-install.png}
+    \caption{การตรวจสอบรายละเอียดและเริ่มติดตั้ง Node.js}
+    \label{fig:node-install}
+\end{figure}
+}{}
+
+\subsubsection{การตั้งค่า Path ของ Node.js}
+\begin{enumerate}[label=\arabic*)]
+    \item เปิดหน้าต่าง System Properties เลือกแท็บ Advanced
+    แล้วกดปุ่ม Environment Variables
+    \item ในส่วน System variables เลือกตัวแปร Path แล้วกด Edit
+    \item ตรวจสอบว่ามีตำแหน่งติดตั้ง Node.js อยู่ในรายการแล้วหรือไม่
+    หากมีอยู่แล้ว ไม่ต้องเพิ่มรายการซ้ำ
+    หากยังไม่มี ให้กด New และกรอกตำแหน่งโฟลเดอร์ที่ติดตั้ง Node.js
+    เช่น \verb|C:\Program Files\nodejs\|
+    โดยใช้ตำแหน่งจริงที่เลือกไว้ระหว่างติดตั้ง
+    \item กด OK เพื่อบันทึกค่าในหน้าต่างแก้ไข Path
+    จากนั้นกด OK ในหน้าต่าง Environment Variables และ System Properties
+\end{enumerate}
+% ภาพต้นฉบับ: image(20261026-053442).png
+\IfFileExists{images/installation/node-system-properties.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-system-properties.png}
+    \caption{แท็บ Advanced ในหน้าต่าง System Properties}
+    \label{fig:node-system-properties}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-053803).png
+\IfFileExists{images/installation/node-environment.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-environment.png}
+    \caption{หน้าต่าง Environment Variables และส่วน System variables}
+    \label{fig:node-environment}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-053726).png
+\IfFileExists{images/installation/node-path.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-path.png}
+    \caption{การตรวจสอบรายการ Path ของ Node.js}
+    \label{fig:node-path}
+\end{figure}
+}{}
+
+% ภาพต้นฉบับ: image(20261026-053735).png
+\IfFileExists{images/installation/node-path-save.png}{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{images/installation/node-path-save.png}
+    \caption{การเพิ่มตำแหน่ง Node.js และบันทึกค่า Path}
+    \label{fig:node-path-save}
+\end{figure}
+}{}
+
+\subsubsection{การตรวจสอบหลังติดตั้ง}
+เปิด Command Prompt หรือ Terminal ใหม่ แล้วตรวจสอบด้วยคำสั่งต่อไปนี้
+\begin{verbatim}
+node --version
+npm --version
+\end{verbatim}
+หากแสดงหมายเลขรุ่นของทั้งสองคำสั่ง แสดงว่าสามารถเรียกใช้งาน Node.js และ npm ได้
 
 \subsection{การเตรียมอุปกรณ์สำหรับทดสอบ}
 % TODO: เพิ่มขั้นตอนเตรียมอุปกรณ์จริงหรือโปรแกรมจำลอง พร้อมภาพประกอบ
