@@ -1,71 +1,102 @@
-\contentsline {chapter}{บทคัดย่อ}{\relax ก}{Doc-Start}%
-\contentsline {chapter}{ABSTRACT}{ข}{Doc-Start}%
-\contentsline {chapter}{กิตติกรรมประกาศ}{ค}{chapter*.1}%
-\contentsline {chapter}{สารบัญ}{ง}{chapter*.2}%
-\contentsline {chapter}{สารบัญภาพ}{ฉ}{chapter*.3}%
-\contentsline {chapter}{สารบัญตาราง}{ช}{chapter*.4}%
+\contentsline {chapter}{คำนำ}{\relax ก}{chapter*.1}%
+\contentsline {chapter}{สารบัญ}{ข}{chapter*.2}%
+\contentsline {chapter}{สารบัญภาพ}{ค}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}บทนำ}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}ความเป็นมาและความสำคัญของปัญหา}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}วัตถุประสงค์}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}ขอบเขตและข้อจำกัดของระบบ}{1}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}ขอบเขต}{1}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}ข้อจำกัดของโครงงาน}{1}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}ประโยชน์ที่คาดว่าจะได้รับ}{1}{section.1.4}%
-\contentsline {chapter}{\numberline {2}ทฤษฎีและงานวิจัยที่เกี่ยวข้อง}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}ทฤษฎีที่เกี่ยวข้อง}{2}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}ชื่อทฤษฎีหรือหลักการที่ 1}{2}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}ชื่อทฤษฎีหรือหลักการที่ 2}{2}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}งานวิจัยที่เกี่ยวข้อง}{2}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}ชื่องานวิจัยที่ 1}{2}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}ชื่องานวิจัยที่ 2}{2}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}สรุปผลการเปรียบเทียบงานวิจัยที่เกี่ยวข้อง}{2}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}เทคโนโลยีและเครื่องมือที่เกี่ยวข้อง}{3}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {(1)}ชื่อเครื่องมือ/เทคโนโลยี 1}{3}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {(2)}ชื่อเครื่องมือ/เทคโนโลยี 2}{3}{subsubsection.2.2.4.2}%
-\contentsline {chapter}{\numberline {3}วิธีการดำเนินโครงงาน}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}ขั้นตอนการดำเนินงาน}{4}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}ศึกษาปัญหาและรวบรวมความต้องการ}{4}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}วิเคราะห์และออกแบบระบบ}{4}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}พัฒนาระบบ}{4}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}ทดสอบและประเมินผล}{4}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}ปรับปรุงและสรุปผล}{4}{subsection.3.1.5}%
-\contentsline {section}{\numberline {3.2}เครื่องมือที่ใช้ในการดำเนินงาน}{4}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}ฮาร์ดแวร์}{4}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}ซอฟต์แวร์}{4}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}แผนการดำเนินงาน}{5}{section.3.3}%
-\contentsline {chapter}{\numberline {4}การวิเคราะห์ ออกแบบและพัฒนาระบบ}{6}{chapter.4}%
-\contentsline {section}{\numberline {4.1}การวิเคราะห์ระบบ}{6}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}ผังแสดงทิศทางของกิจกรรม}{6}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}รายการความต้องการ}{6}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {(1)}ความต้องการเชิงฟังก์ชัน}{6}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {(2)}ความต้องการที่ไม่ใช่เชิงฟังก์ชัน}{6}{subsubsection.4.1.2.2}%
-\contentsline {subsection}{\numberline {4.1.3}Use Case Diagram}{6}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}System Sequence Diagram}{7}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Conceptual Class Diagram}{7}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}การออกแบบระบบ}{7}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}สถาปัตยกรรมของระบบ}{7}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Class Diagram}{7}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Sequence Diagram}{7}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}การออกแบบฐานข้อมูล}{7}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Mockup User Interface}{8}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}การพัฒนาโปรแกรม}{8}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}ภาษาและเครื่องมือที่ใช้ในการพัฒนา}{8}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}โครงสร้างของโปรแกรม}{8}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}ข้อกำหนดเฉพาะของแต่ละส่วน}{8}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}การติดต่อกับฐานข้อมูลและ Services}{8}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}การทดสอบระบบ}{8}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}วิธีการทดสอบ}{8}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}ผลการทดสอบ}{8}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}รายละเอียดกรณีทดสอบ (Test Case Detail)}{9}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}สรุปผลการดำเนินงาน}{10}{chapter.5}%
-\contentsline {section}{\numberline {5.1}สรุปผลการดำเนินโครงงาน}{10}{section.5.1}%
-\contentsline {section}{\numberline {5.2}ข้อจำกัดของระบบ}{10}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}ข้อจำกัดด้านการทำงาน}{10}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}ข้อจำกัดด้านฮาร์ดแวร์และซอฟต์แวร์}{10}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}ปัญหาอุปสรรค และแนวทางแก้ไข}{10}{section.5.3}%
-\contentsline {section}{\numberline {5.4}ข้อเสนอแนะ ในการพัฒนาต่อไป}{10}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}การปรับปรุงฟังก์ชันการทำงาน}{10}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}แนวทางการวิจัยต่อยอด}{10}{subsection.5.4.2}%
-\contentsline {chapter}{เอกสารอ้างอิง}{11}{subsection.5.4.2}%
-\contentsline {chapter}{ภาคผนวก~\relax ก: ตัวอย่าง UI หรือ Prototype}{13}{chapter.0}%
-\contentsline {chapter}{ประวัติผู้เขียน}{15}{appendix*.19}%
+\contentsline {section}{\numberline {1.2}เครื่องมือที่ใช้ในการพัฒนา}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}ความต้องการขั้นต่ำของระบบคอมพิวเตอร์}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}ความต้องการขั้นแนะนำของระบบคอมพิวเตอร์}{1}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}เครื่องมือที่ใช้ในการพัฒนา Pacegasus}{1}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}เครื่องมือที่ใช้ในการพัฒนาเว็บแอปพลิเคชัน}{2}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}ขอบเขตและข้อจำกัดของการวิจัย}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}พัฒนาในรูปแบบแอปพลิเคชันเท่านั้น}{2}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}จัดการข้อมูลโดยใช้ฐานข้อมูล PostgreSQL}{2}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}ไม่มีระบบการชำระเงิน}{2}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}ผู้ใช้งานทั่วไป}{2}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}หัวหน้าคลับ}{2}{subsection.1.3.5}%
+\contentsline {section}{\numberline {1.4}ประโยชน์ที่คาดว่าจะได้รับ}{3}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}ผู้ใช้งานสามารถวางแผนและจัดตารางการวิ่งได้อย่างเหมาะสมกับเป้าหมายและเวลาว่างของตนเอง}{3}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}ผู้ใช้งานได้รับคำแนะนำในการปรับแผนการฝึกตามข้อมูลสุขภาพ ความเหนื่อย และผลการวิ่งของตนเอง}{3}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}ผู้ใช้งานสามารถติดตามประวัติ สถิติ และความก้าวหน้าในการวิ่ง เพื่อใช้ประกอบการพัฒนาการฝึกของตนเอง}{3}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}ผู้ใช้งานมีแรงจูงใจในการวิ่งอย่างต่อเนื่องผ่านภารกิจ การสะสมคะแนน เหรียญ และการตกแต่งอวตาร์}{3}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}ผู้ใช้งานสามารถสร้างความสัมพันธ์และแลกเปลี่ยนประสบการณ์กับเพื่อนหรือสมาชิกในคลับ เพื่อส่งเสริมการออกกำลังกายร่วมกัน}{3}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}หัวหน้าคลับสามารถจัดการข้อมูลและสมาชิกของคลับผ่านแอปพลิเคชันได้อย่างสะดวก}{3}{subsection.1.4.6}%
+\contentsline {chapter}{\numberline {2}คู่มือการใช้งานระบบ}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}การเริ่มต้นใช้งานระบบ}{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}การสมัครสมาชิก}{4}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {(1)}การอ่านข้อกำหนดและให้ความยินยอม}{5}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {(2)}การกรอกข้อมูลเริ่มต้น}{6}{subsubsection.2.1.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}การเข้าสู่ระบบ}{8}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}คู่มือการใช้งานสำหรับผู้ใช้ทั่วไป}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}การตั้งค่าโปรไฟล์}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}การเลือกตารางซ้อม}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}การลงทะเบียนและจัดตารางซ้อมรายสัปดาห์}{12}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {(1)}การลงตารางซ้อมของสัปดาห์ถัดไป}{13}{subsubsection.2.2.3.1}%
+\contentsline {subsection}{\numberline {2.2.4}การบันทึกสุขภาวะประจำวัน (Daily Wellness)}{14}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}การใช้งานเซสชันการวิ่ง}{15}{subsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {(1)}การเข้าสู่หน้าเซสชันและเลือกประเภทการวิ่ง}{15}{subsubsection.2.2.5.1}%
+\contentsline {subsubsection}{\numberline {(2)}การเลือกภารกิจรองและเริ่มต้นการวิ่ง}{16}{subsubsection.2.2.5.2}%
+\contentsline {subsubsection}{\numberline {(3)}การดูภารกิจระหว่างวิ่ง}{17}{subsubsection.2.2.5.3}%
+\contentsline {subsubsection}{\numberline {(4)}การจบการวิ่ง}{17}{subsubsection.2.2.5.4}%
+\contentsline {subsubsection}{\numberline {(5)}การตรวจสอบสรุปผลหลังการวิ่ง}{18}{subsubsection.2.2.5.5}%
+\contentsline {subsubsection}{\numberline {(6)}การตรวจสอบรางวัลหลังการวิ่ง}{19}{subsubsection.2.2.5.6}%
+\contentsline {subsection}{\numberline {2.2.6}การดูสถิติและประวัติการวิ่ง}{19}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {(1)}การเข้าสู่หน้าสถิติการวิ่ง}{20}{subsubsection.2.2.6.1}%
+\contentsline {subsubsection}{\numberline {(2)}การดูรายละเอียดประวัติการวิ่ง}{20}{subsubsection.2.2.6.2}%
+\contentsline {subsection}{\numberline {2.2.7}การดูอันดับผู้ใช้งาน}{21}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}การเพิ่มเพื่อนและจัดการคำขอเป็นเพื่อน}{22}{subsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {(1)}การส่งคำขอเป็นเพื่อน}{23}{subsubsection.2.2.8.1}%
+\contentsline {subsubsection}{\numberline {(2)}การตอบรับหรือปฏิเสธคำขอเป็นเพื่อน}{24}{subsubsection.2.2.8.2}%
+\contentsline {subsubsection}{\numberline {(3)}การตรวจสอบเมื่อเพิ่มเพื่อนสำเร็จ}{24}{subsubsection.2.2.8.3}%
+\contentsline {subsection}{\numberline {2.2.9}การใช้งานร้านค้า}{25}{subsection.2.2.9}%
+\contentsline {subsubsection}{\numberline {(1)}การเลือกและซื้อไอเทม}{26}{subsubsection.2.2.9.1}%
+\contentsline {subsubsection}{\numberline {(2)}การดูตัวอย่างไอเทมเมื่อสวมใส่}{27}{subsubsection.2.2.9.2}%
+\contentsline {subsection}{\numberline {2.2.10}การแต่งตัวและสวมใส่ชุดให้ตัวละคร}{27}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}การใช้งานคลับสำหรับผู้ใช้ทั่วไป}{29}{subsection.2.2.11}%
+\contentsline {subsubsection}{\numberline {(1)}การดูคลับและส่งคำขอเข้าร่วม}{30}{subsubsection.2.2.11.1}%
+\contentsline {subsubsection}{\numberline {(2)}การดูคำเชิญและคำขอที่ส่ง}{31}{subsubsection.2.2.11.2}%
+\contentsline {subsubsection}{\numberline {(3)}การจัดการคลับในส่วนของสมาชิก}{32}{subsubsection.2.2.11.3}%
+\contentsline {subsubsection}{\numberline {(4)}การดูโปรไฟล์สมาชิกคนอื่น}{33}{subsubsection.2.2.11.4}%
+\contentsline {subsection}{\numberline {2.2.12}การตั้งค่าและการลบบัญชี}{34}{subsection.2.2.12}%
+\contentsline {subsubsection}{\numberline {(1)}การเข้าสู่หน้าตั้งค่า}{34}{subsubsection.2.2.12.1}%
+\contentsline {subsubsection}{\numberline {(2)}การลบบัญชี}{35}{subsubsection.2.2.12.2}%
+\contentsline {section}{\numberline {2.3}คู่มือการใช้งานสำหรับหัวหน้าคลับ}{36}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}การสร้างคลับ}{36}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}การแก้ไขข้อมูลและเปิดเมนูจัดการคลับ}{37}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}การอนุมัติคำขอเข้าร่วมคลับ}{38}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}การจัดการบทบาทและสิทธิ์}{39}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}การดูโปรไฟล์และจัดการสมาชิกคลับ}{40}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}การออกจากระบบ}{41}{section.2.4}%
+\contentsline {chapter}{\numberline {3}คู่มือการติดตั้งระบบ}{43}{chapter.3}%
+\contentsline {section}{\numberline {3.1}การเตรียมความพร้อมก่อนติดตั้ง}{43}{section.3.1}%
+\contentsline {section}{\numberline {3.2}การติดตั้งเครื่องมือที่จำเป็น}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}การติดตั้ง Flutter SDK}{43}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {(1)}การตั้งค่า Path ของ Flutter SDK}{43}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {(2)}การตรวจสอบหลังติดตั้ง}{44}{subsubsection.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.2.2}การติดตั้ง Visual Studio Code}{44}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}การติดตั้ง Node.js}{44}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {(1)}การตั้งค่า Path ของ Node.js}{45}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {(2)}การตรวจสอบหลังติดตั้ง}{45}{subsubsection.3.2.3.2}%
+\contentsline {subsection}{\numberline {3.2.4}การเตรียมอุปกรณ์สำหรับทดสอบ}{45}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}การติดตั้งไฟล์โครงการ}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}การตั้งค่า Supabase}{45}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}การเลือกองค์กรและโครงการ}{45}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}การคัดลอก Project URL และ Publishable Key}{46}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}การกำหนดค่า Supabase ในไฟล์ .env}{48}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}การตั้งค่า Google Authentication}{48}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}การเข้าสู่ Google Cloud Console และเลือกโครงการ}{49}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}การสร้าง OAuth Client สำหรับ Web application}{51}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}การสร้าง OAuth Client สำหรับ Android}{53}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}การกำหนด Google Client ID ในไฟล์ .env}{54}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}การตั้งค่า API แผนที่ Sphere GISTDA}{54}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}การเข้าสู่หน้าจัดการ API Keys}{55}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}การกำหนด Project name และสร้าง API Key}{55}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}การดูและคัดลอก API Key}{56}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}การกำหนดค่า Sphere GISTDA ในไฟล์ .env}{56}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}การทดสอบการแสดงผลแผนที่}{57}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}การตั้งค่าการเชื่อมต่อบริการของระบบ}{57}{section.3.7}%
+\contentsline {section}{\numberline {3.8}การใช้งานและพัฒนาระบบ}{57}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}การดาวน์โหลดโครงการจาก GitHub}{57}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}การติดตั้งแพ็กเกจและเรียกใช้เซิร์ฟเวอร์}{58}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}การติดตั้งแพ็กเกจและเปิดแอปพลิเคชัน}{58}{subsection.3.8.3}%
+\contentsline {section}{\numberline {3.9}การเพิ่มโมเดล}{58}{section.3.9}%

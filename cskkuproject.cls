@@ -613,13 +613,13 @@
 
 % หัวข้อย่อยระดับที่ 1: 14pt
 \titleformat{\subsection}
-  {\bfseries\large\upshape}
+  {\normalfont\large\upshape}
   {\thesubsection}
   {0.45\firstindentlength}
   {}
 
 \titleformat{name=\subsection,numberless}
-  {\bfseries\large\upshape}
+  {\normalfont\large\upshape}
   {}
   {0pt}
   {}

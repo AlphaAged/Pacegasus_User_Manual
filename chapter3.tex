@@ -515,7 +515,7 @@ npm --version
 \subsection{การดาวน์โหลดโครงการจาก GitHub}
 \begin{enumerate}[label=\arabic*)]
     \item เปิดเว็บไซต์คลังโครงการ Pacegasus ที่
-    https://github.com/MasTerKey1121/Pacegasus_application
+    \url{https://github.com/MasTerKey1121/Pacegasus_application}
     \item กดปุ่ม Code แล้วคัดลอก URL Repository แบบ HTTPS
     \item สำหรับระบบปฏิบัติการ Windows ให้เปิด Command Prompt
     ในตำแหน่งที่ต้องการเก็บโครงการ แล้วใช้คำสั่งต่อไปนี้
@@ -559,3 +559,40 @@ flutter run
 ส่วน flutter run ใช้เปิดแอปพลิเคชันบนอุปกรณ์ทดสอบหรือโปรแกรมจำลองที่เตรียมไว้
 หากระบบแสดงรายการอุปกรณ์ ให้เลือกอุปกรณ์ที่ต้องการใช้งาน
 โดยเปิดเซิร์ฟเวอร์ใน Terminal แรกไว้พร้อมกัน
+
+\section{การเพิ่มโมเดล}
+การเพิ่มโมเดลสามมิติสำหรับใช้ในแอปพลิเคชัน Pacegasus มีขั้นตอนดังนี้
+\begin{enumerate}[label=(\arabic*)]
+    \item เตรียมโมเดลสามมิติที่ต้องการใช้งาน
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\linewidth,height=0.38\textheight,keepaspectratio]{images/models/step-1.png}
+        \caption{การเตรียมโมเดลสามมิติ}
+        \label{fig:model-step-1}
+    \end{figure}
+    \item ส่งออกโมเดลเป็นไฟล์ GLB โดยเลือกเมนู File แล้วเลือก Export และ glTF 2.0
+    จากนั้นกำหนดรูปแบบไฟล์เป็น GLB และบันทึกไฟล์
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\linewidth,height=0.38\textheight,keepaspectratio]{images/models/step-2.png}
+        \caption{การส่งออกโมเดลเป็นไฟล์ GLB}
+        \label{fig:model-step-2}
+    \end{figure}
+    \item นำไฟล์ \texttt{.glb} ไปไว้ในโฟลเดอร์
+    \texttt{frontend/assets/models/}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\linewidth,height=0.38\textheight,keepaspectratio]{images/models/step-3.png}
+        \caption{การเพิ่มไฟล์โมเดลในโฟลเดอร์ frontend/assets/models/}
+        \label{fig:model-step-3}
+    \end{figure}
+    \item เปิดไฟล์ \texttt{avatar\_provider.dart}
+    แล้วแก้เส้นทางโมเดลเริ่มต้นในส่วน \texttt{assetPath}
+    ให้ตรงกับชื่อไฟล์โมเดลที่เพิ่มไว้ จากนั้นบันทึกไฟล์
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\linewidth,height=0.38\textheight,keepaspectratio]{images/models/step-4.png}
+        \caption{การกำหนดเส้นทางโมเดลใน avatar\_provider.dart}
+        \label{fig:model-step-4}
+    \end{figure}
+\end{enumerate}
