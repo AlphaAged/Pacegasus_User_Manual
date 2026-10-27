@@ -1,5 +1,4 @@
 \contentsline {chapter}{คำนำ}{\relax ก}{chapter*.1}%
-\contentsline {chapter}{สารบัญ}{ข}{chapter*.2}%
 \contentsline {chapter}{สารบัญภาพ}{ค}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}บทนำ}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}ความเป็นมาและความสำคัญของปัญหา}{1}{section.1.1}%
@@ -7,13 +6,11 @@
 \contentsline {subsection}{\numberline {1.2.1}ความต้องการขั้นต่ำของระบบคอมพิวเตอร์}{1}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}ความต้องการขั้นแนะนำของระบบคอมพิวเตอร์}{1}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}เครื่องมือที่ใช้ในการพัฒนา Pacegasus}{1}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}เครื่องมือที่ใช้ในการพัฒนาเว็บแอปพลิเคชัน}{2}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.4}เครื่องมือที่ใช้ในการพัฒนาเว็บแอปพลิเคชัน}{1}{subsection.1.2.4}%
 \contentsline {section}{\numberline {1.3}ขอบเขตและข้อจำกัดของการวิจัย}{2}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}พัฒนาในรูปแบบแอปพลิเคชันเท่านั้น}{2}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}จัดการข้อมูลโดยใช้ฐานข้อมูล PostgreSQL}{2}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}ไม่มีระบบการชำระเงิน}{2}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}ผู้ใช้งานทั่วไป}{2}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}หัวหน้าคลับ}{2}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.1}ขอบเขตของผู้ใช้งานทั่วไป}{2}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}ขอบเขตของหัวหน้าคลับ}{2}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}ขอบเขตและข้อจำกัดของของระบบ}{2}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}ประโยชน์ที่คาดว่าจะได้รับ}{3}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}ผู้ใช้งานสามารถวางแผนและจัดตารางการวิ่งได้อย่างเหมาะสมกับเป้าหมายและเวลาว่างของตนเอง}{3}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}ผู้ใช้งานได้รับคำแนะนำในการปรับแผนการฝึกตามข้อมูลสุขภาพ ความเหนื่อย และผลการวิ่งของตนเอง}{3}{subsection.1.4.2}%

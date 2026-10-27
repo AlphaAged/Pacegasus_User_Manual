@@ -317,7 +317,6 @@
 
 \renewcommand{\tableofcontents}{
   \chapter*{\centering\Large\bfseries สารบัญ}
-  \addcontentsline{toc}{chapter}{สารบัญ}
   \@starttoc{toc}
 }
 
